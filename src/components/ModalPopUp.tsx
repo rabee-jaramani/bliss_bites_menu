@@ -45,21 +45,21 @@ export default function ModalPopUp({itemDetails}:any) {
             >
               <CloseIcon />
             </IconButton>
-          <Typography className='popup-text' id="modal-modal-title" variant="h6" component="h2">
+          <Typography className='popup-text' id="modal-modal-title" variant="h6" component="h2" fontSize={16} fontStyle='italic' fontWeight={700}>
           {itemDetails.itemName}
           </Typography>
           {itemDetails.description?
-           <Typography className='popup-text' id="modal-modal-description" sx={{ mt: 2 }}>
+           <Typography className='popup-text' id="modal-modal-description" sx={{ mt: 2 }} fontSize={14}>
            <strong>Description:</strong><br/>
             {itemDetails.description}
            </Typography>:''
         }
          
-          <Typography className='popup-text' id="modal-modal-price" sx={{ mt: 2 }}>
+          <Typography className='popup-text' id="modal-modal-price" sx={{ mt: 2 }} fontSize={14}>
               <strong>Price</strong><br/>
            AED {itemDetails.price}
           </Typography>
-          <Typography className='popup-text' id="modal-modal-addon" sx={{ mt: 2 }}>
+          <Typography className='popup-text' id="modal-modal-addon" sx={{ mt: 2 }}fontSize={14}>
               {itemDetails.addons?<strong>Add On:</strong>:''}
            {
                itemDetails.addons?(
