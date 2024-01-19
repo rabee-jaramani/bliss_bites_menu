@@ -9,6 +9,10 @@ const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
 }: any) => {
   console.log("FB_List_To_Render from scroll tabs", FB_List_To_Render[0]);
   const [selectedCollection, setSelectedCollection] = React.useState("");
+  const [isSticky, setIsSticky] = React.useState(false);
+
+  // function for sticky heading menu
+
   const scrollToElement = (elementId: string) => {
     const element = document.getElementById(elementId);
 
@@ -29,10 +33,10 @@ const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
   React.useEffect(() => {
     // trigger a function to chnage the context when a tab clicked
     console.log(selectedCollection);
-    scrollToElement(selectedCollection);
+    scrollToElement(selectedCollection.replace(/\s/g, "_").toLowerCase());
   }, [selectedCollection]);
   return (
-    <div className="scrollable-tabs">
+    <div className="scrollable-tabs" id="tabs_div">
       <Box
         sx={{
           flexGrow: 1,
