@@ -2,7 +2,6 @@ import React from "react";
 import Card from "./Card";
 
 export default function FB_CAT({ category }: any) {
-  console.log("categoryyy", category);
   return (
     <div className="fb-cat-container">
       <h2

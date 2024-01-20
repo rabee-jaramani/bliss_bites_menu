@@ -8,6 +8,7 @@ import CloudOutlinedIcon from "@mui/icons-material/CloudOutlined";
 export default function BottomNav({
   selectedFB_type,
   setSelectedFB_type,
+  handleFB_Change,
 }: any) {
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setSelectedFB_type(newValue);
@@ -15,7 +16,8 @@ export default function BottomNav({
 
   React.useEffect(() => {
     console.log("FB Type", selectedFB_type);
-  }, [selectedFB_type]);
+    handleFB_Change();
+  }, [selectedFB_type, handleFB_Change]);
 
   return (
     <div className="bottom-nav">

@@ -2,7 +2,6 @@ import placeholder from "./images/placeholder.webp";
 export const food_full_menu = [
   // =CONCATENATE("{",B3,"'",C3,"'",CHAR(44),D3,"'",E3,"'",CHAR(44),F3,"'",G3,"'",CHAR(44),"image:placeholder",CHAR(44),H3,"[","'",I3,"']}",CHAR(44))
   {
-    parentCats: ["ALL DAY BREAKFAST"],
     categoryName: "Acai of Relief",
     items: [
       {
@@ -21,7 +20,6 @@ export const food_full_menu = [
         ],
       },
       {
-        parentCats: ["ALL DAY BREAKFAST"],
         itemName: "TROPICAL BOON ACAI",
         price: "45",
         description: "Fresh passion fruit, fresh mango, in-house granola",
@@ -36,7 +34,6 @@ export const food_full_menu = [
         ],
       },
       {
-        parentCats: ["ALL DAY BREAKFAST"],
         itemName: "SUPER FOOD CENTRAL ACAI",
         price: "45",
         description:

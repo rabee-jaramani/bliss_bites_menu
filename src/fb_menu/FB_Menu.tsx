@@ -1,19 +1,19 @@
-import React, { useEffect } from 'react'
-import FB_CAT from './FB_CAT'
-export default function FB_MENU({selectedFB_type, handleFB_Change,FB_List_To_Render}:any) {
+import React from "react";
+import FB_COLLECTION from "./FB_COLLECTION";
+export default function FB_MENU({ FB_List_To_Render }: any) {
+  console.log("From FB MENU", FB_List_To_Render);
 
-    useEffect(() => {
-handleFB_Change()
-    }, [selectedFB_type,handleFB_Change])
-    
   return (
-      <>
-    {            FB_List_To_Render.map(
-                (category:any)=>
-                {
-            return <FB_CAT key={category.categoryName} category={category}/>
-        })
-    }
+    <>
+      {FB_List_To_Render.map((collection: any) => {
+        return (
+          <FB_COLLECTION
+            key={collection.parentCatName}
+            collectionName={collection.parentCatName}
+            categories={collection.parentCatCollection}
+          />
+        );
+      })}
     </>
-  )
+  );
 }

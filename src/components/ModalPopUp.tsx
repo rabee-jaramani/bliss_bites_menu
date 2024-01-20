@@ -87,8 +87,8 @@ export default function ModalPopUp({ itemDetails }: any) {
               fontSize={14}
             >
               <strong>Add On:</strong>
-              {itemDetails.addons.map((addon: any) => {
-                return <p>{addon}</p>;
+              {itemDetails.addons.map((addon: any, index: any) => {
+                return <p key={index}>{addon}</p>;
               })}
             </Typography>
           ) : (

@@ -5,36 +5,21 @@ import Tab from "@mui/material/Tab";
 import { ScrollableTabsMenuProps } from "../interfaces";
 
 const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
-  FB_List_To_Render,
+  selectedCollectionsTabs,
+  selectedCollection,
+  setSelectedCollection,
+  scrollTo,
 }: any) => {
-  console.log("FB_List_To_Render from scroll tabs", FB_List_To_Render[0]);
-  const [selectedCollection, setSelectedCollection] = React.useState("");
-  const [isSticky, setIsSticky] = React.useState(false);
+  // const [isSticky, setIsSticky] = React.useState(false);
 
   // function for sticky heading menu
-
-  const scrollToElement = (elementId: string) => {
-    const element = document.getElementById(elementId);
-
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest",
-      });
-    }
-  };
 
   // this state to get the STRING selected from tabs
   const handleChange = (event: React.SyntheticEvent, newValue: any) => {
     setSelectedCollection(newValue);
+    scrollTo(newValue);
   };
 
-  React.useEffect(() => {
-    // trigger a function to chnage the context when a tab clicked
-    console.log(selectedCollection);
-    scrollToElement(selectedCollection.replace(/\s/g, "_").toLowerCase());
-  }, [selectedCollection]);
   return (
     <div className="scrollable-tabs" id="tabs_div">
       <Box
@@ -57,12 +42,8 @@ const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
           }}
           allowScrollButtonsMobile
         >
-          {FB_List_To_Render.map((item: any, index: any) => (
-            <Tab
-              key={index}
-              label={item.categoryName}
-              value={item.categoryName}
-            />
+          {selectedCollectionsTabs.map((item: any, index: any) => (
+            <Tab key={index} label={item} value={item} />
           ))}
         </Tabs>
       </Box>
