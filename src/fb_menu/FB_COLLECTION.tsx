@@ -2,7 +2,6 @@ import React from "react";
 import FB_CAT from "./FB_CAT";
 
 export default function FB_COLLECTION({ collectionName, categories }: any) {
-  console.log("From Collection component", categories);
   return (
     <div className="fb-collection-div">
       <h2

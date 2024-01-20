@@ -17,9 +17,8 @@ const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
   // this state to get the STRING selected from tabs
   const handleChange = (event: React.SyntheticEvent, newValue: any) => {
     setSelectedCollection(newValue);
-    scrollTo(newValue);
+    scrollTo("collection", newValue);
   };
-
   return (
     <div className="scrollable-tabs" id="tabs_div">
       <Box

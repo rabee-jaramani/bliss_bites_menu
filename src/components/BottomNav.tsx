@@ -14,11 +14,6 @@ export default function BottomNav({
     setSelectedFB_type(newValue);
   };
 
-  React.useEffect(() => {
-    console.log("FB Type", selectedFB_type);
-    handleFB_Change();
-  }, [selectedFB_type, handleFB_Change]);
-
   return (
     <div className="bottom-nav">
       <Tabs
