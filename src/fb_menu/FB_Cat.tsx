@@ -6,7 +6,7 @@ export default function FB_CAT({ category }: any) {
     <div className="fb-cat-container">
       <h2
         className="fb-cat-title"
-        id={category.categoryName.replace(/\s/g, "_").toLowerCase()}
+        id={category.categoryName.replace(/[\s-']/g, "").toLowerCase()}
       >
         {category.categoryName}
       </h2>

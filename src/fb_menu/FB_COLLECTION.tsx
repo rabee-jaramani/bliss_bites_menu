@@ -6,7 +6,7 @@ export default function FB_COLLECTION({ collectionName, categories }: any) {
     <div className="fb-collection-div">
       <h2
         className="collection-title"
-        id={collectionName.replace(/\s/g, "_").toLowerCase()}
+        id={collectionName.replace(/[\s-']/g, "").toLowerCase()}
       >
         {collectionName}
       </h2>

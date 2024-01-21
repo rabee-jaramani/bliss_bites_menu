@@ -11,16 +11,20 @@ import { desserts_full_menu_2 } from "./data2";
 import { food_collections } from "./data2";
 import { drinks_collections } from "./data2";
 import { desserts_collections } from "./data2";
-// import { food_categories } from "./data2";
-// import { drinks_categories } from "./data2";
-// import { desserts_categories } from "./data2";
+import { food_categories } from "./data2";
+import { drinks_categories } from "./data2";
+import { desserts_categories } from "./data2";
 import FB_MENU from "./fb_menu/FB_MENU";
 import TopMenu from "./top_menu/TopMenu";
 function App() {
   const scrollTo = (where: string, tabName: string) => {
+    console.log(
+      "tabName.replace",
+      tabName.replace(/[\s-']/g, "").toLowerCase()
+    );
     if (where === "collection") {
       const element = document.getElementById(
-        tabName.replace(/\s/g, "_").toLowerCase()
+        tabName.replace(/[\s-']/g, "").toLowerCase()
       );
       if (element) {
         window.scrollTo({
@@ -31,7 +35,7 @@ function App() {
     }
     if (where === "category") {
       const element = document.getElementById(
-        tabName.replace(/\s/g, "_").toLowerCase()
+        tabName.replace(/[\s-']/g, "").toLowerCase()
       );
       if (element) {
         window.scrollTo({
@@ -62,26 +66,33 @@ function App() {
   const [selectedCollection, setSelectedCollection] = useState("");
 
   // selected Category
-  // const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("");
 
   // collections to render in tabs
   const [selectedCollectionsTabs, setSelectedCollectionsTabs] =
     useState(food_collections);
+  // collections to render in tabs
+  const [selectedCategoriesTabs, setSelectedCategoriesTabs] =
+    useState(food_categories);
+  console.log("selectedCategoriesTabs", selectedCategoriesTabs);
   const handleFB_Change = () => {
     if (selectedFB_type === "Food") {
       setSelectedFB_type("Food");
       setFB_List_To_Render(food_full_menu_2);
       setSelectedCollectionsTabs(food_collections);
+      setSelectedCategoriesTabs(food_categories);
     }
     if (selectedFB_type === "Drinks") {
       setSelectedFB_type("Drinks");
       setFB_List_To_Render(drinks_full_menu_2);
       setSelectedCollectionsTabs(drinks_collections);
+      setSelectedCategoriesTabs(drinks_categories);
     }
     if (selectedFB_type === "Desserts") {
       setSelectedFB_type("Desserts");
       setFB_List_To_Render(desserts_full_menu_2);
       setSelectedCollectionsTabs(desserts_collections);
+      setSelectedCategoriesTabs(desserts_categories);
     }
     // if (selectedFB_type === "Cloud Kitchen") {
     //   setSelectedFB_type("Cloud Kitchen");
@@ -101,6 +112,9 @@ function App() {
           selectedCollectionsTabs={selectedCollectionsTabs}
           selectedCollection={selectedCollection}
           setSelectedCollection={setSelectedCollection}
+          selectedCategoriesTabs={selectedCategoriesTabs}
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
           scrollTo={scrollTo}
         />
         <FB_MENU

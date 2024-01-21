@@ -487,7 +487,7 @@ export const drinks_full_menu_2 = [
     parentCatName: "BEVERAGES",
     parentCatCollection: [
       {
-        categoryName: "Mocktails - Detox Juices",
+        categoryName: "Mocktails - Detox Juice",
         items: [
           {
             itemName: "Booster",

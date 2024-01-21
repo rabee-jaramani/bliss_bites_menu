@@ -4,10 +4,10 @@ import Tabs, { tabsClasses } from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { ScrollableTabsMenuProps } from "../interfaces";
 
-const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
-  selectedCollectionsTabs,
-  selectedCollection,
-  setSelectedCollection,
+const ScrollableTabsMenu2: React.FC<ScrollableTabsMenuProps | any> = ({
+  selectedCategoriesTabs,
+  selectedCategory,
+  setSelectedCategory,
   scrollTo,
 }: any) => {
   // const [isSticky, setIsSticky] = React.useState(false);
@@ -16,11 +16,11 @@ const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
 
   // this state to get the STRING selected from tabs
   const handleChange = (event: React.SyntheticEvent, newValue: any) => {
-    setSelectedCollection(newValue);
-    scrollTo("collection", newValue);
+    setSelectedCategory(newValue);
+    scrollTo("category", newValue);
   };
   return (
-    <div className="scrollable-tabs" id="tabs_div">
+    <div className="scrollable-tabs" id="tabs_div_2">
       <Box
         sx={{
           flexGrow: 1,
@@ -28,7 +28,7 @@ const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
         }}
       >
         <Tabs
-          value={selectedCollection}
+          value={selectedCategory}
           onChange={handleChange}
           variant="scrollable"
           scrollButtons
@@ -40,7 +40,7 @@ const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
           }}
           allowScrollButtonsMobile
         >
-          {selectedCollectionsTabs.map((item: any, index: any) => (
+          {selectedCategoriesTabs.map((item: any, index: any) => (
             <Tab key={index} label={item} value={item} />
           ))}
         </Tabs>
@@ -49,4 +49,4 @@ const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
   );
 };
 
-export default ScrollableTabsMenu;
+export default ScrollableTabsMenu2;
