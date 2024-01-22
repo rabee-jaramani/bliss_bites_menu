@@ -14,7 +14,6 @@ export default function FB_CAT({ category,setSelectedCategory }: any) {
   useEffect(() => {
     const targetElement = document.getElementById(category.categoryName.replace(/[\s-']/g, "").toLowerCase());
     window.addEventListener('scroll', ()=>isInViewport(targetElement)?setSelectedCategory(category.categoryName):'');
-   
   });
 
   return (

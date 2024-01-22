@@ -27,7 +27,7 @@ export const food_categories = [
   "Soups",
   "Burger",
   "Bowls",
-  "Chefs Must-Have Sides",
+  "Chef's Must-Have Sides",
 ];
 export const food_full_menu_2 = [
   {

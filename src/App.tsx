@@ -74,7 +74,6 @@ const menu_categories=[...food_categories,...drinks_categories,...desserts_categ
   // collections to render in tabs
   const [selectedCategoriesTabs, setSelectedCategoriesTabs] =
     useState(menu_categories);
-  console.log("selectedCategoriesTabs", selectedCategoriesTabs);
 
   // replace the render new list with scolling to that list since all are already rendered
   const handleFB_Change = () => {
