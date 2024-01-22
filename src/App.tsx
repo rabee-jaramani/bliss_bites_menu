@@ -14,8 +14,8 @@ import { desserts_collections } from "./data2";
 import { food_categories } from "./data2";
 import { drinks_categories } from "./data2";
 import { desserts_categories } from "./data2";
-import FB_MENU from "./fb_menu/FB_MENU";
 import TopMenu from "./top_menu/TopMenu";
+import FB_MENU from "./fb_menu/FB_MENU";
 function App() {
   const scrollTo = (where: string, tabName: string) => {
 
@@ -140,16 +140,22 @@ const menu_categories=[...food_categories,...drinks_categories,...desserts_categ
           selectedFB_type={selectedFB_type}
           handleFB_Change={handleFB_Change}
           FB_List_To_Render={food_full_menu_2}
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
         />
         <FB_MENU
           selectedFB_type='Drinks'
           handleFB_Change={handleFB_Change}
           FB_List_To_Render={drinks_full_menu_2}
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
         />
         <FB_MENU
           selectedFB_type='Desserts'
           handleFB_Change={handleFB_Change}
           FB_List_To_Render={desserts_full_menu_2}
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
         />
         <BottomNav
           selectedFB_type={selectedFB_type}

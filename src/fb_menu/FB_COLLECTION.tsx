@@ -1,7 +1,7 @@
 import React from "react";
 import FB_CAT from "./FB_CAT";
 
-export default function FB_COLLECTION({ collectionName, categories }: any) {
+export default function FB_COLLECTION({ collectionName, categories,selectedCategory,setSelectedCategory }: any) {
   return (
     <div className="fb-collection-div">
       <h2
@@ -11,7 +11,8 @@ export default function FB_COLLECTION({ collectionName, categories }: any) {
         {collectionName}
       </h2>
       {categories.map((category: any) => {
-        return <FB_CAT category={category} key={category.categoryName} />;
+        return <FB_CAT category={category} key={category.categoryName} selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}/>;
       })}
     </div>
   );
