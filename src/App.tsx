@@ -18,17 +18,14 @@ import FB_MENU from "./fb_menu/FB_MENU";
 import TopMenu from "./top_menu/TopMenu";
 function App() {
   const scrollTo = (where: string, tabName: string) => {
-    console.log(
-      "tabName.replace",
-      tabName.replace(/[\s-']/g, "").toLowerCase()
-    );
+
     if (where === "collection") {
       const element = document.getElementById(
         tabName.replace(/[\s-']/g, "").toLowerCase()
       );
       if (element) {
         window.scrollTo({
-          top: element.offsetTop,
+          top: element.offsetTop-130,
           behavior: "smooth",
         });
       }
@@ -39,7 +36,7 @@ function App() {
       );
       if (element) {
         window.scrollTo({
-          top: element.offsetTop,
+          top: element.offsetTop-100,
           behavior: "smooth",
         });
       }
@@ -56,11 +53,14 @@ function App() {
       }, 15);
     }
   };
+const menu_collections=[...food_collections,...drinks_collections,...desserts_collections]
+const menu_categories=[...food_categories,...drinks_categories,...desserts_categories]
 
   // state to handle fb_type change food drinks dessrts
   const [selectedFB_type, setSelectedFB_type] = useState("Food");
+
   // state to be rendered food_full_menu drinks_full_menudesserts_full_menu
-  const [FB_List_To_Render, setFB_List_To_Render] = useState(food_full_menu_2);
+  // const [FB_List_To_Render, setFB_List_To_Render] = useState(food_full_menu_2);
 
   // selected Collection
   const [selectedCollection, setSelectedCollection] = useState("");
@@ -70,29 +70,31 @@ function App() {
 
   // collections to render in tabs
   const [selectedCollectionsTabs, setSelectedCollectionsTabs] =
-    useState(food_collections);
+    useState(menu_collections);
   // collections to render in tabs
   const [selectedCategoriesTabs, setSelectedCategoriesTabs] =
-    useState(food_categories);
+    useState(menu_categories);
   console.log("selectedCategoriesTabs", selectedCategoriesTabs);
+
+  // replace the render new list with scolling to that list since all are already rendered
   const handleFB_Change = () => {
     if (selectedFB_type === "Food") {
       setSelectedFB_type("Food");
-      setFB_List_To_Render(food_full_menu_2);
-      setSelectedCollectionsTabs(food_collections);
-      setSelectedCategoriesTabs(food_categories);
+      // setFB_List_To_Render(food_full_menu_2);
+      // setSelectedCollectionsTabs(food_collections);
+      // setSelectedCategoriesTabs(food_categories);
     }
     if (selectedFB_type === "Drinks") {
       setSelectedFB_type("Drinks");
-      setFB_List_To_Render(drinks_full_menu_2);
-      setSelectedCollectionsTabs(drinks_collections);
-      setSelectedCategoriesTabs(drinks_categories);
+      // setFB_List_To_Render(drinks_full_menu_2);
+      // setSelectedCollectionsTabs(drinks_collections);
+      // setSelectedCategoriesTabs(drinks_categories);
     }
     if (selectedFB_type === "Desserts") {
       setSelectedFB_type("Desserts");
-      setFB_List_To_Render(desserts_full_menu_2);
-      setSelectedCollectionsTabs(desserts_collections);
-      setSelectedCategoriesTabs(desserts_categories);
+      // setFB_List_To_Render(desserts_full_menu_2);
+      // setSelectedCollectionsTabs(desserts_collections);
+      // setSelectedCategoriesTabs(desserts_categories);
     }
     // if (selectedFB_type === "Cloud Kitchen") {
     //   setSelectedFB_type("Cloud Kitchen");
@@ -102,6 +104,23 @@ function App() {
   };
 
   useEffect(() => {
+    
+  const stickyElem = document.getElementById("top_menu");
+  const currStickyPos = stickyElem?stickyElem.getBoundingClientRect().top+ window.pageYOffset:'';
+  window.onscroll = function () {
+      /* Check if the current Y offset
+      is greater than the position of
+      the element */
+      if(stickyElem){
+        if (window.pageYOffset > currStickyPos) {
+          stickyElem.classList.add('fixed-top')
+      } else {
+        stickyElem.classList.remove('fixed-top')
+
+      }
+      }
+
+  }
     handleFB_Change();
   }, [selectedFB_type]);
   return (
@@ -120,7 +139,17 @@ function App() {
         <FB_MENU
           selectedFB_type={selectedFB_type}
           handleFB_Change={handleFB_Change}
-          FB_List_To_Render={FB_List_To_Render}
+          FB_List_To_Render={food_full_menu_2}
+        />
+        <FB_MENU
+          selectedFB_type='Drinks'
+          handleFB_Change={handleFB_Change}
+          FB_List_To_Render={drinks_full_menu_2}
+        />
+        <FB_MENU
+          selectedFB_type='Desserts'
+          handleFB_Change={handleFB_Change}
+          FB_List_To_Render={desserts_full_menu_2}
         />
         <BottomNav
           selectedFB_type={selectedFB_type}
