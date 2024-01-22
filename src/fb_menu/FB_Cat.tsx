@@ -6,9 +6,8 @@ export default function FB_CAT({ category,setSelectedCategory }: any) {
 
   function isInViewport(element:any) {
     var rect = element.getBoundingClientRect();
-    var html = document.documentElement;
     return (
-      rect.top <= 170 
+      rect.top <= 150 
     );
   }
   useEffect(() => {

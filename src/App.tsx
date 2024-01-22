@@ -63,10 +63,10 @@ const menu_categories=[...food_categories,...drinks_categories,...desserts_categ
   // const [FB_List_To_Render, setFB_List_To_Render] = useState(food_full_menu_2);
 
   // selected Collection
-  const [selectedCollection, setSelectedCollection] = useState("");
+  const [selectedCollection, setSelectedCollection] = useState("ALL DAY BREAKFAST");
 
   // selected Category
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("Acai of Relief");
 
   // collections to render in tabs
   const [selectedCollectionsTabs, setSelectedCollectionsTabs] =
@@ -141,6 +141,8 @@ const menu_categories=[...food_categories,...drinks_categories,...desserts_categ
           FB_List_To_Render={food_full_menu_2}
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
+          selectedCollection={selectedCollection}
+          setSelectedCollection={setSelectedCollection}
         />
         <FB_MENU
           selectedFB_type='Drinks'
@@ -148,6 +150,8 @@ const menu_categories=[...food_categories,...drinks_categories,...desserts_categ
           FB_List_To_Render={drinks_full_menu_2}
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
+          selectedCollection={selectedCollection}
+          setSelectedCollection={setSelectedCollection}
         />
         <FB_MENU
           selectedFB_type='Desserts'
@@ -155,6 +159,8 @@ const menu_categories=[...food_categories,...drinks_categories,...desserts_categ
           FB_List_To_Render={desserts_full_menu_2}
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
+          selectedCollection={selectedCollection}
+          setSelectedCollection={setSelectedCollection}
         />
         <BottomNav
           selectedFB_type={selectedFB_type}
