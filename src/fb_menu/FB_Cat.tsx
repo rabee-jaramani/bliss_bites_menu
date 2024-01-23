@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Card from "./Card";
 
 export default function FB_CAT({ category,setSelectedCategory }: any) {
@@ -10,9 +10,29 @@ export default function FB_CAT({ category,setSelectedCategory }: any) {
       rect.top <= 150 
     );
   }
+  const debounce = (func: Function, delay: number) => {
+    let timeoutId: NodeJS.Timeout;
+    return (...args: any[]) => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        func(...args);
+      }, delay);
+    };
+  };
+  const targetElementRef = useRef<HTMLDivElement | null>(null);
+
   useEffect(() => {
-    const targetElement = document.getElementById(category.categoryName.replace(/[\s-']/g, "").toLowerCase());
-    window.addEventListener('scroll', ()=>isInViewport(targetElement)?setSelectedCategory(category.categoryName):'');
+    const handleScroll = debounce(() => {
+      if (targetElementRef.current && isInViewport(targetElementRef.current)) {
+        setSelectedCategory(category.categoryName);
+      }
+    }, 100); // Adjust the debounce time as needed
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   });
 
   return (
@@ -20,6 +40,7 @@ export default function FB_CAT({ category,setSelectedCategory }: any) {
       <h2
         className="fb-cat-title"
         id={category.categoryName.replace(/[\s-']/g, "").toLowerCase()}
+        ref={targetElementRef}
       >
         {category.categoryName}
       </h2>

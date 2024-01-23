@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import FB_CAT from "./FB_CAT";
 
 export default function FB_COLLECTION({ collectionName, categories,selectedCategory,setSelectedCategory,selectedCollection,setSelectedCollection }: any) {
@@ -10,9 +10,29 @@ export default function FB_COLLECTION({ collectionName, categories,selectedCateg
       rect.top <= 150 
     );
   }
+  const debounce = (func: Function, delay: number) => {
+    let timeoutId: NodeJS.Timeout;
+    return (...args: any[]) => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        func(...args);
+      }, delay);
+    };
+  };
+  const targetElementRef = useRef<HTMLDivElement | null>(null);
+
   useEffect(() => {
-    const targetElement = document.getElementById(collectionName.replace(/[\s-']/g, "").toLowerCase());
-    window.addEventListener('scroll', ()=>isInViewport(targetElement)?setSelectedCollection(collectionName):'');
+    const handleScroll = debounce(() => {
+      if (targetElementRef.current && isInViewport(targetElementRef.current)) {
+        setSelectedCollection(collectionName);
+      }
+    }, 100); // Adjust the debounce time as needed
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   });
 
   
@@ -21,6 +41,7 @@ export default function FB_COLLECTION({ collectionName, categories,selectedCateg
       <h2
         className="collection-title"
         id={collectionName.replace(/[\s-']/g, "").toLowerCase()}
+        ref={targetElementRef}
       >
         {collectionName}
       </h2>
