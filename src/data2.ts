@@ -13,6 +13,8 @@ import placeholder from "./images/placeholder.webp";
 //       },
 //     ],
 //   },
+export const menu_collections = ["ALL DAY BREAKFAST", "ALL DAY MENU","BEVERAGES","BLISSFUL DESSERTS"];
+
 export const food_collections = ["ALL DAY BREAKFAST", "ALL DAY MENU"];
 export const food_categories = [
   "Acai of Relief",
@@ -25,7 +27,7 @@ export const food_categories = [
   "Soups",
   "Burger",
   "Bowls",
-  "Chefs Must-Have Sides",
+  "Chef's Must-Have Sides",
 ];
 export const food_full_menu_2 = [
   {

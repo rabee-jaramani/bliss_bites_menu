@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ScrollableTabsMenu from "../components/ScrollableTabsMenu";
 import ScrollableTabsMenu2 from "../components/ScrollableTabsMenu2";
 
@@ -11,8 +11,14 @@ export default function TopMenu({
   setSelectedCategory,
   scrollTo,
 }: any) {
+
+
+  useEffect(() => {
+
+  },)
+  
   return (
-    <div className="top-menu-div">
+    <div className="top-menu-div" id="top_menu">
       <ScrollableTabsMenu
         selectedCollectionsTabs={selectedCollectionsTabs}
         selectedCollection={selectedCollection}
