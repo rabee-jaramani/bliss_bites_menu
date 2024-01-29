@@ -1,22 +1,34 @@
 
 .scrollable-tabs
     position: relative
-    max-width: 500px
+    max-width: 600px
     width: 100%
     .MuiTabs-root
-        height: 50px
+        // height: 50px
         padding-top: 2px
     button
         font-family: 'Libre Caslon Text', serif !important
         font-size: 12px
-        padding-top: 0
-        padding-bottom: 0
+        padding: 5px
+        border-radius: 5px
+        .MuiAvatar-circular
+            position: relative
+            border-radius: 0
+            width: 140px
+            height: 80px
+            img
+                position: relative
+                border-radius: 5px
 
     .Mui-selected
         color: #fff !important
-        background-color: #0F6A7C
+        background-color: #348b9d
 .css-k62qqn-MuiTabs-root
     // padding: 5px 0 3px 0
+#tabs_div_2
+    border-radius: 0 0 20px 20px
+    overflow: hidden
+
 @media screen and (max-width:500px)
     .scrollable-tabs
         max-width: 100%

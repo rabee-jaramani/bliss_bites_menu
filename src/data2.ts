@@ -1,4 +1,8 @@
 import placeholder from "./images/placeholder.webp";
+import Berry_Bliss_Acai from "./images/all-day-breakfast/Berry_Bliss_Acai.webp"
+import Super_Food_Central_Acai from "./images/all-day-breakfast/Super_Food_Central_Acai.webp"
+import Tropical_Boon_Acai from "./images/all-day-breakfast/Tropical_Boon_Acai.webp"
+import FREE_RANGE_ROOST from "./images/all-day-breakfast/FREE_RANGE_ROOST.webp"
 // =CONCATENATE("{",B3,"'",C3,"'",CHAR(44),D3,"'",E3,"'",CHAR(44),F3,"'",G3,"'",CHAR(44),"image:placeholder",CHAR(44),H3,"[","'",I3,"']}",CHAR(44))
 
 // {
@@ -13,7 +17,12 @@ import placeholder from "./images/placeholder.webp";
 //       },
 //     ],
 //   },
-export const menu_collections = ["ALL DAY BREAKFAST", "ALL DAY MENU","BEVERAGES","BLISSFUL DESSERTS"];
+export const menu_collections = [
+  {menu_name:"ALL DAY BREAKFAST",menu_img:Berry_Bliss_Acai},
+  {menu_name:"ALL DAY MENU",menu_img:Super_Food_Central_Acai},
+  {menu_name:"BEVERAGES",menu_img:Tropical_Boon_Acai},
+  {menu_name:"BLISSFUL DESSERTS",menu_img:FREE_RANGE_ROOST},
+  ];
 
 export const food_collections = ["ALL DAY BREAKFAST", "ALL DAY MENU"];
 export const food_categories = [
@@ -32,6 +41,7 @@ export const food_categories = [
 export const food_full_menu_2 = [
   {
     parentCatName: "ALL DAY BREAKFAST",
+    parentCatImage:Berry_Bliss_Acai,
     parentCatCollection: [
       {
         categoryName: "Acai of Relief",
@@ -41,7 +51,7 @@ export const food_full_menu_2 = [
             price: "46",
             description:
               "Fresh banana, fresh berries, in-house granola with chia seeds",
-            image: placeholder,
+            image: Berry_Bliss_Acai,
             addons: [
               "1. In-House Granola AED 5",
               "2. Steel Cut Oats AED 5",
@@ -55,7 +65,7 @@ export const food_full_menu_2 = [
             itemName: "TROPICAL BOON ACAI",
             price: "45",
             description: "Fresh passion fruit, fresh mango, in-house granola",
-            image: placeholder,
+            image: Tropical_Boon_Acai,
             addons: [
               "1. In-House Granola AED 5",
               "2. Steel Cut Oats AED 5",
@@ -70,7 +80,7 @@ export const food_full_menu_2 = [
             price: "45",
             description:
               "Sliced banana, peanut butter, coconut flakes and in-house granola",
-            image: placeholder,
+            image: Super_Food_Central_Acai,
             addons: [
               "1. In-House Granola AED 5",
               "2. Steel Cut Oats AED 5",
@@ -84,13 +94,14 @@ export const food_full_menu_2 = [
       },
       {
         categoryName: "Power Protien",
+    parentCatImage:Super_Food_Central_Acai,
         items: [
           {
             itemName: "FREE RANGE ROOST",
             price: "40",
             description:
               "Eggs Benedict: poached egg, in-house red kidney beans, sweet potato roasty, sliced avocado, served with in-house millet-based Toast with Tzatziki spread",
-            image: placeholder,
+            image: FREE_RANGE_ROOST,
             addons: [
               "1. Truffle almond soft cheese AED 5",
               "2. Cranberry jalapeno soft cheese AED 5",
@@ -103,7 +114,7 @@ export const food_full_menu_2 = [
             price: "40",
             description:
               "Frittata omlette served with in-house millet-based ciabatta toast and rosemary mash on the side",
-            image: placeholder,
+            image: FREE_RANGE_ROOST,
             addons: [
               "1. Truffle almond soft cheese AED 5",
               "2. Cranberry jalapeno soft cheese AED 5",
@@ -116,7 +127,7 @@ export const food_full_menu_2 = [
             price: "40",
             description:
               "Scrambled eggs with choice of cheese, grilled vegetables served with out in-house millet-based cheddar jalapeno toast",
-            image: placeholder,
+            image: FREE_RANGE_ROOST,
             addons: [
               "1. Truffle almond soft cheese AED 5",
               "2. Cranberry jalapeno soft cheese AED 5",
@@ -269,6 +280,7 @@ export const food_full_menu_2 = [
   },
   {
     parentCatName: "ALL DAY MENU",
+    parentCatImage:Tropical_Boon_Acai,
     parentCatCollection: [
       {
         categoryName: "Wraps and Crepes",
@@ -487,6 +499,7 @@ export const drinks_categories = [
 export const drinks_full_menu_2 = [
   {
     parentCatName: "BEVERAGES",
+    parentCatImage:Super_Food_Central_Acai,
     parentCatCollection: [
       {
         categoryName: "Mocktails - Detox Juice",
@@ -859,6 +872,7 @@ export const desserts_categories = [
 export const desserts_full_menu_2 = [
   {
     parentCatName: "BLISSFUL DESSERTS",
+    parentCatImage:FREE_RANGE_ROOST,
     parentCatCollection: [
       {
         categoryName: "Plated Desserts",

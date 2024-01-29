@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import FB_CAT from "./FB_CAT";
 
-export default function FB_COLLECTION({ collectionName, categories,selectedCategory,setSelectedCategory,selectedCollection,setSelectedCollection }: any) {
+export default function FB_COLLECTION({ collectionName,parentCatImage, categories,selectedCategory,setSelectedCategory,selectedCollection,setSelectedCollection }: any) {
 
 
   function isInViewport(element:any) {
@@ -45,6 +45,7 @@ export default function FB_COLLECTION({ collectionName, categories,selectedCateg
       >
         {collectionName}
       </h2>
+      {/* <img src={parentCatImage}/> */}
       {categories.map((category: any) => {
         return <FB_CAT category={category} key={category.categoryName} selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory} selectedCollection={selectedCollection}

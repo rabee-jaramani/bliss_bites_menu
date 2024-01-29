@@ -8,6 +8,8 @@ import Footer from "./footer/Footer";
 import { food_full_menu_2 } from "./data2";
 import { drinks_full_menu_2 } from "./data2";
 import { desserts_full_menu_2 } from "./data2";
+
+import {menu_collections} from './data2'
 import { food_collections } from "./data2";
 import { drinks_collections } from "./data2";
 import { desserts_collections } from "./data2";
@@ -18,14 +20,15 @@ import TopMenu from "./top_menu/TopMenu";
 import FB_MENU from "./fb_menu/FB_MENU";
 function App() {
   const scrollTo = (where: string, tabName: string) => {
-
+    console.log("cliecked",tabName.replace(/[\s-']/g, "").toLowerCase())
     if (where === "collection") {
       const element = document.getElementById(
         tabName.replace(/[\s-']/g, "").toLowerCase()
       );
+      console.log(element)
       if (element) {
         window.scrollTo({
-          top: element.offsetTop-130,
+          top: element.offsetTop-161,
           behavior: "smooth",
         });
       }
@@ -35,14 +38,16 @@ function App() {
         tabName.replace(/[\s-']/g, "").toLowerCase()
       );
       if (element) {
+        console.log('elment',element)
+        console.log('element.offsetTop',element.offsetTop)
         window.scrollTo({
-          top: element.offsetTop-100,
+          top: element.offsetTop-161,
           behavior: "smooth",
         });
       }
     }
     if (where === "fb-menu") {
-      const scrollStep = -window.scrollY / (500 / 10); // Adjust the speed as needed
+      const scrollStep = -window.scrollY / (600 / 10); // Adjust the speed as needed
 
       const scrollInterval = setInterval(() => {
         if (window.scrollY !== 0) {
@@ -53,7 +58,7 @@ function App() {
       }, 15);
     }
   };
-const menu_collections=[...food_collections,...drinks_collections,...desserts_collections]
+// const menu_collections=[...food_collections,...drinks_collections,...desserts_collections]
 const menu_categories=[...food_categories,...drinks_categories,...desserts_categories]
 
   // state to handle fb_type change food drinks dessrts

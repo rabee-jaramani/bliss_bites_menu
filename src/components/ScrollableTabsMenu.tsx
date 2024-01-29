@@ -3,7 +3,8 @@ import Box from "@mui/material/Box";
 import Tabs, { tabsClasses } from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { ScrollableTabsMenuProps } from "../interfaces";
-
+import { Avatar } from "@mui/material";
+import placeholder2 from '../images/placeholder2.webp'
 const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
   selectedCollectionsTabs,
   selectedCollection,
@@ -15,7 +16,7 @@ const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
   // function for sticky heading menu
 
   // this state to get the STRING selected from tabs
-  const handleChange = (event: React.SyntheticEvent, newValue: any) => {
+  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setSelectedCollection(newValue);
     scrollTo("collection", newValue);
   };
@@ -31,7 +32,7 @@ const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
           value={selectedCollection}
           onChange={handleChange}
           variant="scrollable"
-          scrollButtons
+          scrollButtons={false}
           aria-label="visible arrows tabs example"
           sx={{
             [`& .${tabsClasses.scrollButtons}`]: {
@@ -41,7 +42,7 @@ const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
           allowScrollButtonsMobile
         >
           {selectedCollectionsTabs.map((item: any, index: any) => (
-            <Tab key={index} label={item} value={item} />
+            <Tab key={index} label={item.menu_name} value={item.menu_name} icon={<Avatar alt="ava" src={item.menu_img}/>}/>
           ))}
         </Tabs>
       </Box>

@@ -8,6 +8,7 @@ export default function FB_MENU({ FB_List_To_Render,selectedCategory,setSelected
           <FB_COLLECTION
             key={collection.parentCatName}
             collectionName={collection.parentCatName}
+            parentCatImage={collection.parentCatImage}
             categories={collection.parentCatCollection}
             selectedCategory={selectedCategory}
             setSelectedCategory={setSelectedCategory}
