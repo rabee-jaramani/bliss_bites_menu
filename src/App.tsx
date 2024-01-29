@@ -19,14 +19,13 @@ import TopMenu from "./top_menu/TopMenu";
 import FB_MENU from "./fb_menu/FB_MENU";
 function App() {
   const scrollTo = (where: string, tabName: string) => {
-
     if (where === "collection") {
       const element = document.getElementById(
         tabName.replace(/[\s-']/g, "").toLowerCase()
       );
       if (element) {
         window.scrollTo({
-          top: element.offsetTop-190,
+          top: element.offsetTop - 190,
           behavior: "smooth",
         });
       }
@@ -37,7 +36,7 @@ function App() {
       );
       if (element) {
         window.scrollTo({
-          top: element.offsetTop-180,
+          top: element.offsetTop - 180,
           behavior: "smooth",
         });
       }
@@ -54,8 +53,12 @@ function App() {
       }, 15);
     }
   };
-// const menu_collections=[...food_collections,...drinks_collections,...desserts_collections]
-const menu_categories=[...food_categories,...drinks_categories,...desserts_categories]
+  // const menu_collections=[...food_collections,...drinks_collections,...desserts_collections]
+  const menu_categories = [
+    ...food_categories,
+    ...drinks_categories,
+    ...desserts_categories,
+  ];
 
   // state to handle fb_type change food drinks dessrts
   const [selectedFB_type, setSelectedFB_type] = useState("Food");
@@ -64,7 +67,8 @@ const menu_categories=[...food_categories,...drinks_categories,...desserts_categ
   // const [FB_List_To_Render, setFB_List_To_Render] = useState(food_full_menu_2);
 
   // selected Collection
-  const [selectedCollection, setSelectedCollection] = useState("ALL DAY BREAKFAST");
+  const [selectedCollection, setSelectedCollection] =
+    useState("ALL DAY BREAKFAST");
 
   // selected Category
   const [selectedCategory, setSelectedCategory] = useState("Acai of Relief");
@@ -104,23 +108,19 @@ const menu_categories=[...food_categories,...drinks_categories,...desserts_categ
   };
 
   useEffect(() => {
-    
-  const stickyElem = document.getElementById("top_menu");
-  const currStickyPos = stickyElem?stickyElem.getBoundingClientRect().top+ window.pageYOffset:'';
-  window.onscroll = function () {
-
-      /* Check if the current Y offset
-      is greater than the position of
-      the element */
-      if(stickyElem){
+    const stickyElem = document.getElementById("top_menu");
+    const currStickyPos = stickyElem
+      ? stickyElem.getBoundingClientRect().top + window.pageYOffset
+      : "";
+    window.onscroll = function () {
+      if (stickyElem) {
         if (window.pageYOffset > currStickyPos) {
-          stickyElem.classList.add('fixed-top')
-      } else {
-        stickyElem.classList.remove('fixed-top')
+          stickyElem.classList.add("fixed-top");
+        } else {
+          stickyElem.classList.remove("fixed-top");
+        }
       }
-      }
-
-  }
+    };
     handleFB_Change();
   }, [selectedFB_type]);
   return (
@@ -146,7 +146,7 @@ const menu_categories=[...food_categories,...drinks_categories,...desserts_categ
           setSelectedCollection={setSelectedCollection}
         />
         <FB_MENU
-          selectedFB_type='Drinks'
+          selectedFB_type="Drinks"
           handleFB_Change={handleFB_Change}
           FB_List_To_Render={drinks_full_menu_2}
           selectedCategory={selectedCategory}
@@ -155,7 +155,7 @@ const menu_categories=[...food_categories,...drinks_categories,...desserts_categ
           setSelectedCollection={setSelectedCollection}
         />
         <FB_MENU
-          selectedFB_type='Desserts'
+          selectedFB_type="Desserts"
           handleFB_Change={handleFB_Change}
           FB_List_To_Render={desserts_full_menu_2}
           selectedCategory={selectedCategory}

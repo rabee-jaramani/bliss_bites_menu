@@ -31,15 +31,15 @@ const ScrollableTabsMenu2: React.FC<ScrollableTabsMenuProps | any> = ({
           value={selectedCategory}
           onChange={handleChange}
           variant="scrollable"
-          scrollButtons={false}
-          style={{backgroundColor:"#f1fdff"}}
+          scrollButtons={true}
+          style={{ backgroundColor: "#f1fdff" }}
           aria-label="visible arrows tabs example"
           sx={{
             [`& .${tabsClasses.scrollButtons}`]: {
               "&.Mui-disabled": { opacity: 0.3 },
             },
           }}
-          allowScrollButtonsMobile={false}
+          allowScrollButtonsMobile={true}
         >
           {selectedCategoriesTabs.map((item: any, index: any) => (
             <Tab key={index} label={item} value={item} />
