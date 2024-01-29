@@ -7,7 +7,7 @@ export default function FB_COLLECTION({ collectionName, categories,selectedCateg
   function isInViewport(element:any) {
     var rect = element.getBoundingClientRect();
     return (
-      rect.top <= 150 
+      rect.top <= 300 
     );
   }
   const debounce = (func: Function, delay: number) => {
@@ -26,7 +26,7 @@ export default function FB_COLLECTION({ collectionName, categories,selectedCateg
       if (targetElementRef.current && isInViewport(targetElementRef.current)) {
         setSelectedCollection(collectionName);
       }
-    }, 100); // Adjust the debounce time as needed
+    }, 200); // Adjust the debounce time as needed
 
     window.addEventListener('scroll', handleScroll);
 

@@ -6,8 +6,9 @@ export default function FB_CAT({ category,setSelectedCategory }: any) {
 
   function isInViewport(element:any) {
     var rect = element.getBoundingClientRect();
+    console.log("rect.top from FB CAT",rect.top)
     return (
-      rect.top <= 150 
+      rect.top <= 300
     );
   }
   const debounce = (func: Function, delay: number) => {
@@ -26,7 +27,7 @@ export default function FB_CAT({ category,setSelectedCategory }: any) {
       if (targetElementRef.current && isInViewport(targetElementRef.current)) {
         setSelectedCategory(category.categoryName);
       }
-    }, 100); // Adjust the debounce time as needed
+    }, 200); // Adjust the debounce time as needed
 
     window.addEventListener('scroll', handleScroll);
 

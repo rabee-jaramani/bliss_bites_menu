@@ -1,4 +1,13 @@
 import placeholder from "./images/placeholder.webp";
+import Berry_Bliss_Acai from "./images/breakfast/Berry_Bliss_Acai.webp";
+import FREE_RANGE_ROOST from "./images/breakfast/FREE_RANGE_ROOST.webp";
+import Super_Food_Central_Acai from "./images/breakfast/Super_Food_Central_Acai.webp";
+import Tropical_Boon_Acai from "./images/breakfast/Tropical_Boon_Acai.webp";
+import gluten_free from "./images/icons/gluten_free.svg"
+import recommended from "./images/icons/recommended.svg"
+import refined_sugar_free from "./images/icons/refined_sugar_free.svg"
+import spicy from "./images/icons/spicy.svg"
+import vegan from "./images/icons/vegan.svg"
 // =CONCATENATE("{",B3,"'",C3,"'",CHAR(44),D3,"'",E3,"'",CHAR(44),F3,"'",G3,"'",CHAR(44),"image:placeholder",CHAR(44),H3,"[","'",I3,"']}",CHAR(44))
 
 // {
@@ -13,7 +22,12 @@ import placeholder from "./images/placeholder.webp";
 //       },
 //     ],
 //   },
-export const menu_collections = ["ALL DAY BREAKFAST", "ALL DAY MENU","BEVERAGES","BLISSFUL DESSERTS"];
+export const menu_collections = [
+  {menu_name:"ALL DAY BREAKFAST",menu_img:Berry_Bliss_Acai},
+  {menu_name:"ALL DAY MENU",menu_img:FREE_RANGE_ROOST},
+  {menu_name:"BEVERAGES",menu_img:Super_Food_Central_Acai},
+  {menu_name:"BLISSFUL DESSERTS",menu_img:Tropical_Boon_Acai},
+];
 
 export const food_collections = ["ALL DAY BREAKFAST", "ALL DAY MENU"];
 export const food_categories = [
@@ -41,7 +55,8 @@ export const food_full_menu_2 = [
             price: "46",
             description:
               "Fresh banana, fresh berries, in-house granola with chia seeds",
-            image: placeholder,
+            image: Berry_Bliss_Acai,
+            icons:[gluten_free,recommended,spicy,vegan],
             addons: [
               "1. In-House Granola AED 5",
               "2. Steel Cut Oats AED 5",
@@ -55,7 +70,8 @@ export const food_full_menu_2 = [
             itemName: "TROPICAL BOON ACAI",
             price: "45",
             description: "Fresh passion fruit, fresh mango, in-house granola",
-            image: placeholder,
+            image: FREE_RANGE_ROOST,
+            icons:[recommended,refined_sugar_free,spicy,vegan],
             addons: [
               "1. In-House Granola AED 5",
               "2. Steel Cut Oats AED 5",
@@ -70,7 +86,8 @@ export const food_full_menu_2 = [
             price: "45",
             description:
               "Sliced banana, peanut butter, coconut flakes and in-house granola",
-            image: placeholder,
+            image: Super_Food_Central_Acai,
+            icons:[gluten_free,recommended,spicy],
             addons: [
               "1. In-House Granola AED 5",
               "2. Steel Cut Oats AED 5",
@@ -90,7 +107,9 @@ export const food_full_menu_2 = [
             price: "40",
             description:
               "Eggs Benedict: poached egg, in-house red kidney beans, sweet potato roasty, sliced avocado, served with in-house millet-based Toast with Tzatziki spread",
-            image: placeholder,
+            image: Tropical_Boon_Acai,
+            icons:[gluten_free,recommended,spicy,vegan],
+
             addons: [
               "1. Truffle almond soft cheese AED 5",
               "2. Cranberry jalapeno soft cheese AED 5",
@@ -103,7 +122,7 @@ export const food_full_menu_2 = [
             price: "40",
             description:
               "Frittata omlette served with in-house millet-based ciabatta toast and rosemary mash on the side",
-            image: placeholder,
+            image: Super_Food_Central_Acai,
             addons: [
               "1. Truffle almond soft cheese AED 5",
               "2. Cranberry jalapeno soft cheese AED 5",
@@ -116,7 +135,7 @@ export const food_full_menu_2 = [
             price: "40",
             description:
               "Scrambled eggs with choice of cheese, grilled vegetables served with out in-house millet-based cheddar jalapeno toast",
-            image: placeholder,
+            image: Tropical_Boon_Acai,
             addons: [
               "1. Truffle almond soft cheese AED 5",
               "2. Cranberry jalapeno soft cheese AED 5",
@@ -134,7 +153,7 @@ export const food_full_menu_2 = [
             price: "46",
             description:
               "A classic french toast with cream cheese and berries on the side",
-            image: placeholder,
+            image: Super_Food_Central_Acai,
             addons: [""],
           },
           {

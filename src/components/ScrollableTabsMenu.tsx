@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Tabs, { tabsClasses } from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { ScrollableTabsMenuProps } from "../interfaces";
-
+import { Avatar } from "@mui/material";
 const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
   selectedCollectionsTabs,
   selectedCollection,
@@ -31,17 +31,17 @@ const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
           value={selectedCollection}
           onChange={handleChange}
           variant="scrollable"
-          scrollButtons
+          scrollButtons={false}
           aria-label="visible arrows tabs example"
           sx={{
             [`& .${tabsClasses.scrollButtons}`]: {
               "&.Mui-disabled": { opacity: 0.3 },
             },
           }}
-          allowScrollButtonsMobile
+          allowScrollButtonsMobile={false}
         >
           {selectedCollectionsTabs.map((item: any, index: any) => (
-            <Tab key={index} label={item} value={item} />
+            <Tab key={index} label={item.menu_name} value={item.menu_name}  icon={<Avatar alt="test avatar" src={item.menu_img} />}/>
           ))}
         </Tabs>
       </Box>

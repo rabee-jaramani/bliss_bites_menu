@@ -8,6 +8,7 @@ import Footer from "./footer/Footer";
 import { food_full_menu_2 } from "./data2";
 import { drinks_full_menu_2 } from "./data2";
 import { desserts_full_menu_2 } from "./data2";
+import { menu_collections } from "./data2";
 import { food_collections } from "./data2";
 import { drinks_collections } from "./data2";
 import { desserts_collections } from "./data2";
@@ -25,7 +26,7 @@ function App() {
       );
       if (element) {
         window.scrollTo({
-          top: element.offsetTop-130,
+          top: element.offsetTop-190,
           behavior: "smooth",
         });
       }
@@ -36,7 +37,7 @@ function App() {
       );
       if (element) {
         window.scrollTo({
-          top: element.offsetTop-100,
+          top: element.offsetTop-180,
           behavior: "smooth",
         });
       }
@@ -53,7 +54,7 @@ function App() {
       }, 15);
     }
   };
-const menu_collections=[...food_collections,...drinks_collections,...desserts_collections]
+// const menu_collections=[...food_collections,...drinks_collections,...desserts_collections]
 const menu_categories=[...food_categories,...drinks_categories,...desserts_categories]
 
   // state to handle fb_type change food drinks dessrts
@@ -107,6 +108,7 @@ const menu_categories=[...food_categories,...drinks_categories,...desserts_categ
   const stickyElem = document.getElementById("top_menu");
   const currStickyPos = stickyElem?stickyElem.getBoundingClientRect().top+ window.pageYOffset:'';
   window.onscroll = function () {
+
       /* Check if the current Y offset
       is greater than the position of
       the element */
@@ -115,7 +117,6 @@ const menu_categories=[...food_categories,...drinks_categories,...desserts_categ
           stickyElem.classList.add('fixed-top')
       } else {
         stickyElem.classList.remove('fixed-top')
-
       }
       }
 
