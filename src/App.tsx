@@ -80,17 +80,17 @@ function App() {
   const handleFB_Change = () => {
     if (selectedFB_type === "Food") {
       setSelectedFB_type("Food");
-      scrollTo("top", 'ALL DAY BREAKFAST');
+      // scrollTo("top", 'ALL DAY BREAKFAST');
 
     }
     if (selectedFB_type === "Drinks") {
       setSelectedFB_type("Drinks");
-      scrollTo("collection", 'BEVERAGES');
+      // scrollTo("collection", 'BEVERAGES');
 
     }
     if (selectedFB_type === "Desserts") {
       setSelectedFB_type("Desserts");
-      scrollTo("collection", 'BLISSFUL DESSERTS');
+      // scrollTo("collection", 'BLISSFUL DESSERTS');
     }
     // if (selectedFB_type === "Cloud Kitchen") {
     //   setSelectedFB_type("Cloud Kitchen");
@@ -112,8 +112,9 @@ function App() {
         }
       }
     };
-    handleFB_Change();
-  }, [selectedFB_type]);
+    // handleFB_Change();
+  }, []);
+// }, [selectedFB_type]);
   return (
     <div className="App">
       <div className="app-container">

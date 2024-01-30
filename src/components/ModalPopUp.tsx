@@ -75,7 +75,7 @@ export default function ModalPopUp({ itemDetails }: any) {
             sx={{ mt: 2 }}
             fontSize={14}
           >
-            <strong>Price</strong>
+            <strong>Price:</strong>
             <br />
            <strong> AED {itemDetails.price}</strong>
           </Typography>
