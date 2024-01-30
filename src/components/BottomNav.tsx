@@ -9,6 +9,9 @@ export default function BottomNav({
   selectedFB_type,
   setSelectedFB_type,
   handleFB_Change,
+  selectedCollection,
+  setSelectedCollection,
+  scrollTo
 }: any) {
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setSelectedFB_type(newValue);

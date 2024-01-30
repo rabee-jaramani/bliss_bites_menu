@@ -77,7 +77,7 @@ export default function ModalPopUp({ itemDetails }: any) {
           >
             <strong>Price</strong>
             <br />
-            AED {itemDetails.price}
+           <strong> AED {itemDetails.price}</strong>
           </Typography>
           {itemDetails.addons[0] !== "" ? (
             <Typography
@@ -94,6 +94,22 @@ export default function ModalPopUp({ itemDetails }: any) {
           ) : (
             ""
           )}
+           <Typography
+              className="popup-text"
+              id="modal-info-bottom"
+              sx={{ mt: 2 }}
+              fontSize={14}
+            >
+              <div><strong>No added emulsifiers and preservatives:</strong></div>
+              <ul style={{listStyleType:"none"}}>
+                <li>*Kindly inquire for plant-based alternatives</li>
+                <li>*Kindly ask for Nut free and Dairy free option</li>
+                <li>*All our dishes are made with millets</li>
+                <li>*All our dishes contain coconut and date sugar</li>
+              </ul>
+              <br />
+              
+            </Typography>
         </Box>
       </Modal>
     </div>
