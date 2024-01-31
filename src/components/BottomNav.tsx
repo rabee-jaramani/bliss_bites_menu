@@ -16,8 +16,8 @@ export default function BottomNav({
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setSelectedFB_type(newValue);
     if(newValue==='Food'){
-      setSelectedCollection('ALL DAY BREAKFAST');
-      scrollTo("collection", 'ALL DAY BREAKFAST');
+      setSelectedCollection('BREAKFAST');
+      scrollTo("collection", 'BREAKFAST');
     }
     if(newValue==='Drinks'){
       setSelectedCollection('BEVERAGES');

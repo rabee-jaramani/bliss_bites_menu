@@ -32,7 +32,7 @@ const ScrollableTabsMenu2: React.FC<ScrollableTabsMenuProps | any> = ({
           onChange={handleChange}
           variant="scrollable"
           scrollButtons={true}
-          style={{ backgroundColor: "#f1fdff" }}
+          style={{ backgroundColor: "#e4edef" }}
           aria-label="visible arrows tabs example"
           sx={{
             [`& .${tabsClasses.scrollButtons}`]: {

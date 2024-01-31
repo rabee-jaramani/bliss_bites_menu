@@ -50,7 +50,7 @@ function App() {
           clearInterval(scrollInterval);
         }
       }, 15);
-      setSelectedCollection('ALL DAY BREAKFAST')
+      setSelectedCollection('BREAKFAST')
     }
   };
   // const menu_collections=[...food_collections,...drinks_collections,...desserts_collections]
@@ -65,7 +65,7 @@ function App() {
 
   // selected Collection
   const [selectedCollection, setSelectedCollection] =
-    useState("ALL DAY BREAKFAST");
+    useState("BREAKFAST");
 
   // selected Category
   const [selectedCategory, setSelectedCategory] = useState("Acai of Relief");
@@ -80,7 +80,7 @@ function App() {
   const handleFB_Change = () => {
     if (selectedFB_type === "Food") {
       setSelectedFB_type("Food");
-      // scrollTo("top", 'ALL DAY BREAKFAST');
+      // scrollTo("top", 'BREAKFAST');
 
     }
     if (selectedFB_type === "Drinks") {
@@ -98,23 +98,7 @@ function App() {
     // }
   };
 
-  useEffect(() => {
-    const stickyElem = document.getElementById("top_menu");
-    const currStickyPos = stickyElem
-      ? stickyElem.getBoundingClientRect().top + window.pageYOffset
-      : "";
-    window.onscroll = function () {
-      if (stickyElem) {
-        if (window.pageYOffset > currStickyPos) {
-          stickyElem.classList.add("fixed-top");
-        } else {
-          stickyElem.classList.remove("fixed-top");
-        }
-      }
-    };
-    // handleFB_Change();
-  }, []);
-// }, [selectedFB_type]);
+
   return (
     <div className="App">
       <div className="app-container">

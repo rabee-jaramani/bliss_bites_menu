@@ -82,13 +82,13 @@ import zesty_ladle_soup from "./images/items/zesty_ladle_soup.webp"
 
 
 export const menu_collections = [
-  { menu_name: "ALL DAY BREAKFAST", menu_img: Breakfast },
+  { menu_name: "BREAKFAST", menu_img: Breakfast },
   { menu_name: "ALL DAY MENU", menu_img: All_Day_Menu },
   { menu_name: "BEVERAGES", menu_img: Beverages },
   { menu_name: "BLISSFUL DESSERTS", menu_img: Blissful_Desserts },
 ];
 
-export const food_collections = ["ALL DAY BREAKFAST", "ALL DAY MENU"];
+export const food_collections = ["BREAKFAST", "ALL DAY MENU"];
 export const food_categories = [
   "Acai of Relief",
   "Power Protien",
@@ -105,7 +105,7 @@ export const food_categories = [
 ];
 export const food_full_menu_2 = [
   {
-    parentCatName: "ALL DAY BREAKFAST",
+    parentCatName: "BREAKFAST",
     parentCatCollection: [
       {
         categoryName: "Acai of Relief",
