@@ -4,7 +4,6 @@ import Card from "./Card";
 export default function FB_CAT({ category, setSelectedCategory }: any) {
   function isInViewport(element: any) {
     var rect = element.getBoundingClientRect();
-    console.log("rect.top from FB CAT", rect.top);
     return rect.top <= 300;
   }
   const debounce = (func: Function, delay: number) => {

@@ -18,7 +18,6 @@ import beetroot_sriracha from "./images/items/beetroot_sriracha.webp";
 import berry_bliss_acai from "./images/items/berry_bliss_acai.webp";
 import charcoal_latte from "./images/items/charcoal_latte.webp";
 import chicken_charcoal from "./images/items/chicken_charcoal.webp";
-import classic_lemon from "./images/items/classic_lemon.webp";
 import flat_white_and_cappuccino from "./images/items/flat_white_&_cappuccino.webp";
 import free_range_roost from "./images/items/free_range_roost.webp";
 import french_toast_parisian from "./images/items/french_toast_parisian.webp";
@@ -333,15 +332,7 @@ export const food_full_menu_2 = [
             allergies: [recommended, gluten_free, refined_sugar_free, spicy],
             addons: [""],
           },
-          {
-            itemName: "LBT",
-            price: "50",
-            description:
-              "Labneh, Pineapple Toast: Labneh with fresh cucumber chives and fresh pineapple",
-            image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
-            addons: [""],
-          },
+
           {
             itemName: "BBQ CHICKEN",
             price: "65",
@@ -635,7 +626,6 @@ export const food_full_menu_2 = [
 export const drinks_collections = ["BEVERAGES"];
 export const drinks_categories = [
   "Mocktails - Detox Juice",
-  "Fresh Juices",
   "Iced Coffee",
   "Coffee Organic",
   "Herbal Tea",
@@ -683,77 +673,18 @@ export const drinks_full_menu_2 = [
             allergies: [gluten_free, refined_sugar_free, vegan],
             addons: [""],
           },
-        ],
-      },
-      {
-        categoryName: "Fresh Juices",
-        items: [
           {
-            itemName: "Orange",
-            price: "25",
-            description: "",
+            itemName: "Beetroot",
+            price: "35",
+            description:
+              "Fresh baby spinach, green apples, lime, coconut water, ginger, kale, cucmber and of course no water",
             image: placeholder,
-            allergies: [""],
-            addons: [""],
-          },
-          {
-            itemName: "Watermelon",
-            price: "25",
-            description: "",
-            image: placeholder,
-            allergies: [""],
-            addons: [""],
-          },
-          {
-            itemName: "Pineapple",
-            price: "25",
-            description: "",
-            image: placeholder,
-            allergies: [""],
-            addons: [""],
-          },
-          {
-            itemName: "Lemon",
-            price: "25",
-            description: "",
-            image: classic_lemon,
-            allergies: [""],
-            addons: [""],
-          },
-          {
-            itemName: "Carrot",
-            price: "25",
-            description: "",
-            image: placeholder,
-            allergies: [""],
-            addons: [""],
-          },
-          {
-            itemName: "Banana",
-            price: "25",
-            description: "",
-            image: placeholder,
-            allergies: [""],
-            addons: [""],
-          },
-          {
-            itemName: "Kiwi",
-            price: "25",
-            description: "",
-            image: placeholder,
-            allergies: [""],
-            addons: [""],
-          },
-          {
-            itemName: "Strawberry",
-            price: "25",
-            description: "",
-            image: placeholder,
-            allergies: [""],
+            allergies: [gluten_free, refined_sugar_free, vegan],
             addons: [""],
           },
         ],
       },
+
       {
         categoryName: "Iced Coffee",
         items: [
@@ -976,7 +907,7 @@ export const drinks_full_menu_2 = [
             addons: [""],
           },
           {
-            itemName: "Karak Powder",
+            itemName: "Herbal Karak",
             price: "20",
             description: "",
             image: placeholder,
@@ -1000,7 +931,7 @@ export const drinks_full_menu_2 = [
             addons: [""],
           },
           {
-            itemName: "Arabian Night Loose",
+            itemName: "Arabian Night",
             price: "20",
             description: "",
             image: arabian_night_loose,
@@ -1016,7 +947,7 @@ export const drinks_full_menu_2 = [
             addons: [""],
           },
           {
-            itemName: "Turmeric Green Tea Blend",
+            itemName: "Turmeric Green",
             price: "20",
             description: "",
             image: turmeric_green_tea_blend,
