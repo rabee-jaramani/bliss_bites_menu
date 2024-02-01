@@ -10,11 +10,6 @@ const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
   setSelectedCollection,
   scrollTo,
 }: any) => {
-  // const [isSticky, setIsSticky] = React.useState(false);
-
-  // function for sticky heading menu
-
-  // this state to get the STRING selected from tabs
   const handleChange = (event: React.SyntheticEvent, newValue: any) => {
     setSelectedCollection(newValue);
     scrollTo("collection", newValue);
@@ -41,7 +36,12 @@ const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
           allowScrollButtonsMobile={false}
         >
           {selectedCollectionsTabs.map((item: any, index: any) => (
-            <Tab key={index} label={item.menu_name} value={item.menu_name}  icon={<Avatar alt="test avatar" src={item.menu_img} />}/>
+            <Tab
+              key={index}
+              label={item.menu_name}
+              value={item.menu_name}
+              icon={<Avatar alt="test avatar" src={item.menu_img} />}
+            />
           ))}
         </Tabs>
       </Box>

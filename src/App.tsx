@@ -1,17 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Banner from "./banner/Banner";
 import BottomNav from "./components/BottomNav";
-// import ScrollableTabsMenu from './components/ScrollableTabsMenu';
 import Footer from "./footer/Footer";
-// import { food_full_menu } from "./data";
 
 import { food_full_menu_2 } from "./data2";
 import { drinks_full_menu_2 } from "./data2";
 import { desserts_full_menu_2 } from "./data2";
 import { menu_collections } from "./data2";
-// import { food_collections } from "./data2";
-// import { drinks_collections } from "./data2";
-// import { desserts_collections } from "./data2";
 import { food_categories } from "./data2";
 import { drinks_categories } from "./data2";
 import { desserts_categories } from "./data2";
@@ -50,10 +45,9 @@ function App() {
           clearInterval(scrollInterval);
         }
       }, 15);
-      setSelectedCollection('BREAKFAST')
+      setSelectedCollection("BREAKFAST");
     }
   };
-  // const menu_collections=[...food_collections,...drinks_collections,...desserts_collections]
   const menu_categories = [
     ...food_categories,
     ...drinks_categories,
@@ -64,8 +58,7 @@ function App() {
   const [selectedFB_type, setSelectedFB_type] = useState("Food");
 
   // selected Collection
-  const [selectedCollection, setSelectedCollection] =
-    useState("BREAKFAST");
+  const [selectedCollection, setSelectedCollection] = useState("BREAKFAST");
 
   // selected Category
   const [selectedCategory, setSelectedCategory] = useState("Acai of Relief");
@@ -80,24 +73,18 @@ function App() {
   const handleFB_Change = () => {
     if (selectedFB_type === "Food") {
       setSelectedFB_type("Food");
-      // scrollTo("top", 'BREAKFAST');
-
     }
     if (selectedFB_type === "Drinks") {
       setSelectedFB_type("Drinks");
-      // scrollTo("collection", 'BEVERAGES');
-
     }
     if (selectedFB_type === "Desserts") {
       setSelectedFB_type("Desserts");
-      // scrollTo("collection", 'BLISSFUL DESSERTS');
     }
     // if (selectedFB_type === "Cloud Kitchen") {
     //   setSelectedFB_type("Cloud Kitchen");
     //   setFB_List_To_Render(cloud_kitchen_full_menu);
     // }
   };
-
 
   return (
     <div className="App">
@@ -143,8 +130,8 @@ function App() {
           selectedFB_type={selectedFB_type}
           setSelectedFB_type={setSelectedFB_type}
           handleFB_Change={handleFB_Change}
-          selectedCollection= {selectedCollection}
-          setSelectedCollection= {setSelectedCollection}
+          selectedCollection={selectedCollection}
+          setSelectedCollection={setSelectedCollection}
           scrollTo={scrollTo}
         />
         <Footer />

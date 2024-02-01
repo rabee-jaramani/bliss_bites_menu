@@ -11,49 +11,48 @@ export default function TopMenu({
   setSelectedCategory,
   scrollTo,
 }: any) {
-
   const [isScrolled, setIsScrolled] = useState(false);
-const[isMobile,setIsMobile]=useState((window.innerWidth<=600)?true:false)
+  const [isMobile, setIsMobile] = useState(
+    window.innerWidth <= 600 ? true : false
+  );
 
-
-// if(window.innerWidth<=600){
-//   setIsMobile(true)
-// }
   useEffect(() => {
-
     const handleScroll = () => {
       const offset = window.scrollY;
-      if (offset > (isMobile?270:460)) {
+      if (offset > (isMobile ? 270 : 460)) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
-  
+  });
+
   return (
     <>
-    <div className={`top-menu-div ${isScrolled ? 'fixed-top' : ''}`} id="top_menu">
-      <ScrollableTabsMenu
-        selectedCollectionsTabs={selectedCollectionsTabs}
-        selectedCollection={selectedCollection}
-        setSelectedCollection={setSelectedCollection}
-        scrollTo={scrollTo}
-      />
-      <ScrollableTabsMenu2
-        selectedCategoriesTabs={selectedCategoriesTabs}
-        selectedCategory={selectedCategory}
-        setSelectedCategory={setSelectedCategory}
-        scrollTo={scrollTo}
-      />
-    </div>
-    <div className={`spacer ${!isScrolled ? 'fixed-top' : ''}`}></div>
+      <div
+        className={`top-menu-div ${isScrolled ? "fixed-top" : ""}`}
+        id="top_menu"
+      >
+        <ScrollableTabsMenu
+          selectedCollectionsTabs={selectedCollectionsTabs}
+          selectedCollection={selectedCollection}
+          setSelectedCollection={setSelectedCollection}
+          scrollTo={scrollTo}
+        />
+        <ScrollableTabsMenu2
+          selectedCategoriesTabs={selectedCategoriesTabs}
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
+          scrollTo={scrollTo}
+        />
+      </div>
+      <div className={`spacer ${!isScrolled ? "fixed-top" : ""}`}></div>
     </>
   );
 }

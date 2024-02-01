@@ -10,11 +10,6 @@ const ScrollableTabsMenu2: React.FC<ScrollableTabsMenuProps | any> = ({
   setSelectedCategory,
   scrollTo,
 }: any) => {
-  // const [isSticky, setIsSticky] = React.useState(false);
-
-  // function for sticky heading menu
-
-  // this state to get the STRING selected from tabs
   const handleChange = (event: React.SyntheticEvent, newValue: any) => {
     setSelectedCategory(newValue);
     scrollTo("category", newValue);

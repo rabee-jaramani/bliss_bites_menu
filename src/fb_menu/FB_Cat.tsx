@@ -1,15 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import Card from "./Card";
 
-export default function FB_CAT({ category,setSelectedCategory }: any) {
-
-
-  function isInViewport(element:any) {
+export default function FB_CAT({ category, setSelectedCategory }: any) {
+  function isInViewport(element: any) {
     var rect = element.getBoundingClientRect();
-    console.log("rect.top from FB CAT",rect.top)
-    return (
-      rect.top <= 300
-    );
+    console.log("rect.top from FB CAT", rect.top);
+    return rect.top <= 300;
   }
   const debounce = (func: Function, delay: number) => {
     let timeoutId: NodeJS.Timeout;
@@ -29,10 +25,10 @@ export default function FB_CAT({ category,setSelectedCategory }: any) {
       }
     }, 200); // Adjust the debounce time as needed
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   });
 

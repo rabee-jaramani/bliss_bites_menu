@@ -1,14 +1,17 @@
 import React, { useEffect, useRef } from "react";
 import FB_CAT from "./FB_CAT";
 
-export default function FB_COLLECTION({ collectionName, categories,selectedCategory,setSelectedCategory,selectedCollection,setSelectedCollection }: any) {
-
-
-  function isInViewport(element:any) {
+export default function FB_COLLECTION({
+  collectionName,
+  categories,
+  selectedCategory,
+  setSelectedCategory,
+  selectedCollection,
+  setSelectedCollection,
+}: any) {
+  function isInViewport(element: any) {
     var rect = element.getBoundingClientRect();
-    return (
-      rect.top <= 300 
-    );
+    return rect.top <= 300;
   }
   const debounce = (func: Function, delay: number) => {
     let timeoutId: NodeJS.Timeout;
@@ -28,14 +31,13 @@ export default function FB_COLLECTION({ collectionName, categories,selectedCateg
       }
     }, 200); // Adjust the debounce time as needed
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   });
 
-  
   return (
     <div className="fb-collection-div">
       <h2
@@ -46,9 +48,16 @@ export default function FB_COLLECTION({ collectionName, categories,selectedCateg
         {collectionName}
       </h2>
       {categories.map((category: any) => {
-        return <FB_CAT category={category} key={category.categoryName} selectedCategory={selectedCategory}
-        setSelectedCategory={setSelectedCategory} selectedCollection={selectedCollection}
-        setSelectedCollection={setSelectedCollection}/>;
+        return (
+          <FB_CAT
+            category={category}
+            key={category.categoryName}
+            selectedCategory={selectedCategory}
+            setSelectedCategory={setSelectedCategory}
+            selectedCollection={selectedCollection}
+            setSelectedCollection={setSelectedCollection}
+          />
+        );
       })}
     </div>
   );
