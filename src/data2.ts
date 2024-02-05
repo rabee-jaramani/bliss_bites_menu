@@ -104,7 +104,12 @@ export const food_full_menu_2 = [
             description:
               "Fresh banana, fresh berries, in-house granola with chia seeds",
             image: berry_bliss_acai,
-            allergies: [recommended, gluten_free, sugar_free, vegan],
+            allergies: [
+              {allergyName:`Chef's Recommendation`,allergySrc:recommended},
+              {allergyName:`Gluten Free`,allergySrc:gluten_free},
+              {allergyName:`Sugar Free`,allergySrc:sugar_free},
+              {allergyName:`Vegan`,allergySrc:vegan},
+            ],
             addons: [
               "1. In-House Granola AED 5",
               "2. Steel Cut Oats AED 5",
@@ -120,7 +125,10 @@ export const food_full_menu_2 = [
             price: "45",
             description: "Fresh passion fruit, fresh mango, in-house granola",
             image: tropical_boon_acai,
-            allergies: [gluten_free, sugar_free, vegan],
+            allergies: [              {allergyName:`Chef's Recommendation`,allergySrc:recommended},
+              {allergyName:`Gluten Free`,allergySrc:gluten_free},
+              {allergyName:`Sugar Free`,allergySrc:sugar_free},
+              {allergyName:`Vegan`,allergySrc:vegan},],
             addons: [
               "1. In-House Granola AED 5",
               "2. Steel Cut Oats AED 5",
@@ -137,7 +145,12 @@ export const food_full_menu_2 = [
             description:
               "Sliced banana, peanut butter, coconut flakes and in-house granola",
             image: super_food_central_acai,
-            allergies: [gluten_free, sugar_free, vegan],
+            allergies: [
+              {allergyName:`Chef's Recommendation`,allergySrc:recommended},
+              {allergyName:`Gluten Free`,allergySrc:gluten_free},
+              {allergyName:`Sugar Free`,allergySrc:sugar_free},
+              {allergyName:`Vegan`,allergySrc:vegan},
+            ],
             addons: [
               "1. In-House Granola AED 5",
               "2. Steel Cut Oats AED 5",
@@ -159,7 +172,8 @@ export const food_full_menu_2 = [
             description:
               "Eggs Benedict: poached egg, in-house red kidney beans, sweet potato roasty, sliced avocado, served with in-house millet-based Toast with Tzatziki spread",
             image: free_range_roost,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [
               "1. Truffle almond soft cheese AED 5",
               "2. Cranberry jalapeno soft cheese AED 5",
@@ -173,7 +187,8 @@ export const food_full_menu_2 = [
             description:
               "Frittata omlette served with in-house millet-based ciabatta toast and rosemary mash on the side",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [
               "1. Truffle almond soft cheese AED 5",
               "2. Cranberry jalapeno soft cheese AED 5",
@@ -187,7 +202,8 @@ export const food_full_menu_2 = [
             description:
               "Scrambled eggs with choice of cheese, grilled vegetables served with out in-house millet-based cheddar jalapeno toast",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [
               "1. Truffle almond soft cheese AED 5",
               "2. Cranberry jalapeno soft cheese AED 5",
@@ -206,7 +222,8 @@ export const food_full_menu_2 = [
             description:
               "A classic french toast with cream cheese and berries on the side",
             image: french_toast_parisian,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -215,7 +232,8 @@ export const food_full_menu_2 = [
             description:
               "Saffron crème ganache french toast served with fresh strawberries",
             image: french_toast_zaefran,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -224,7 +242,8 @@ export const food_full_menu_2 = [
             description:
               "French toast with lavendar ganache and a hue of berries",
             image: alkhuzamma,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -233,7 +252,8 @@ export const food_full_menu_2 = [
             description:
               "French toast with mastic tree ganache and caramelised banana",
             image: almastakii,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -242,7 +262,11 @@ export const food_full_menu_2 = [
             description:
               "French toast with toffee ganache, pecan nuts and fresh raspberries",
             image: placeholder,
-            allergies: [recommended, gluten_free, refined_sugar_free],
+            allergies: [
+  { allergyName: "Chef's Recommendation", allergySrc: recommended },
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+],
             addons: [""],
           },
         ],
@@ -255,7 +279,12 @@ export const food_full_menu_2 = [
             price: "45",
             description: "French toast with chilli chives cream cheese ",
             image: fromage_frais,
-            allergies: [recommended, gluten_free, refined_sugar_free, spicy],
+            allergies: [
+  { allergyName: "Chef's Recommendation", allergySrc: recommended },
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Spicy', allergySrc: spicy },
+],
             addons: [""],
           },
           {
@@ -263,7 +292,8 @@ export const food_full_menu_2 = [
             price: "45",
             description: "French toast with sundried tomato pesto cream cheese",
             image: tomates_secados_alsol,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
         ],
@@ -276,7 +306,8 @@ export const food_full_menu_2 = [
             price: "50",
             description: "Scrambled silken tofu with crème",
             image: levian_toast,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -284,7 +315,11 @@ export const food_full_menu_2 = [
             price: "50",
             description: "Scrambled eggs with guacamole, and slices of avocado",
             image: joey,
-            allergies: [recommended, gluten_free, refined_sugar_free],
+            allergies: [
+  { allergyName: "Chef's Recommendation", allergySrc: recommended },
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+],
             addons: [""],
           },
           {
@@ -293,7 +328,8 @@ export const food_full_menu_2 = [
             description:
               "Labneh, toasted with mushrooms and spinach, fried basil with boiled egg and chilli flakes",
             image: labneh_mush,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -302,7 +338,8 @@ export const food_full_menu_2 = [
             description:
               "Caramelized onion, cheddar cheese and grilled tofu glazed with in-house barbeque sauce",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -311,7 +348,11 @@ export const food_full_menu_2 = [
             description:
               "In-house vegan sriracha, fresh strawberries, fresh basil and fresh labneh",
             image: valley_sriracha_toast,
-            allergies: [gluten_free, refined_sugar_free, spicy],
+            allergies: [
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Spicy', allergySrc: spicy },
+],
             addons: [""],
           },
           {
@@ -320,7 +361,12 @@ export const food_full_menu_2 = [
             description:
               "Katsu glazed grilled halloumi with sweet soy sesame cream cheese",
             image: tonkatsu,
-            allergies: [recommended, gluten_free, refined_sugar_free, spicy],
+            allergies: [
+  { allergyName: "Chef's Recommendation", allergySrc: recommended },
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Spicy', allergySrc: spicy },
+],
             addons: [""],
           },
           {
@@ -329,7 +375,12 @@ export const food_full_menu_2 = [
             description:
               "Silken tofu, mushroom and spinach, dash of cheddar flavoured with curry powder",
             image: the_holy_tms,
-            allergies: [recommended, gluten_free, refined_sugar_free, spicy],
+            allergies: [
+  { allergyName: "Chef's Recommendation", allergySrc: recommended },
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Spicy', allergySrc: spicy },
+],
             addons: [""],
           },
 
@@ -339,7 +390,11 @@ export const food_full_menu_2 = [
             description:
               "Grilled barbeque chicken with sweet potato mash and caramelised onions",
             image: placeholder,
-            allergies: [recommended, gluten_free, refined_sugar_free],
+            allergies: [
+  { allergyName: "Chef's Recommendation", allergySrc: recommended },
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+],
             addons: [""],
           },
         ],
@@ -358,7 +413,12 @@ export const food_full_menu_2 = [
             description:
               "Scrambled tempeh with curry chowder served with in-house preserves and vegan mayo",
             image: tempeh_pepper_wrap,
-            allergies: [gluten_free, refined_sugar_free, spicy, vegan],
+            allergies: [
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Spicy', allergySrc: spicy },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
             addons: [""],
           },
           {
@@ -368,11 +428,11 @@ export const food_full_menu_2 = [
               "Tofu glazed in sriracha, chargrilled brocolli & in-house sriracha mayo wrapped in lettuce & kale",
             image: beetroot_sriracha,
             allergies: [
-              recommended,
-              gluten_free,
-              refined_sugar_free,
-              spicy,
-              vegan,
+              { allergyName: "Chef's Recommendation", allergySrc: recommended },
+              { allergyName: 'Gluten Free', allergySrc: gluten_free },
+              { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+              { allergyName: 'Spicy', allergySrc: spicy },
+              { allergyName: 'Vegan', allergySrc: vegan },
             ],
             addons: [""],
           },
@@ -382,7 +442,11 @@ export const food_full_menu_2 = [
             description:
               "Chicken marinated in herbs and spices served on a charcoal crepe with a poached egg",
             image: chicken_charcoal,
-            allergies: [recommended, gluten_free, refined_sugar_free],
+            allergies: [
+  { allergyName: "Chef's Recommendation", allergySrc: recommended },
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+],
             addons: [""],
           },
         ],
@@ -396,7 +460,12 @@ export const food_full_menu_2 = [
             description:
               "Guacamole, baby spinach, feta cheese, cherry tomatoes, pecan nuts and in-house gluten-free and vegan nachos and crackers",
             image: merc_mexico_salad,
-            allergies: [recommended, gluten_free, refined_sugar_free, vegan],
+            allergies: [
+              { allergyName: "Chef's Recommendation", allergySrc: recommended },
+              { allergyName: 'Gluten Free', allergySrc: gluten_free },
+              { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+              { allergyName: 'Vegan', allergySrc: vegan },
+            ],
             addons: [
               "1. Grilled Chicken AED 20",
               "2. Norweigian Salmon AED 20",
@@ -412,7 +481,11 @@ export const food_full_menu_2 = [
             description:
               "Tri-colour quinoa, smoked broccoli, fresh beetroot, feta cheese, carrots, cucumber and mixed greens",
             image: healthy_harvest,
-            allergies: [gluten_free, refined_sugar_free, vegan],
+            allergies: [
+              { allergyName: 'Gluten Free', allergySrc: gluten_free },
+              { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+              { allergyName: 'Vegan', allergySrc: vegan },
+            ],
             addons: [
               "1. Grilled Chicken AED 20",
               "2. Norweigian Salmon AED 20",
@@ -433,7 +506,11 @@ export const food_full_menu_2 = [
             description:
               "Roasted red bell pepper, roasted tomatoes, roasted carrots, celery and vegetable stock",
             image: zesty_ladle_soup,
-            allergies: [recommended, gluten_free, refined_sugar_free],
+            allergies: [
+  { allergyName: "Chef's Recommendation", allergySrc: recommended },
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+],
             addons: [""],
           },
           {
@@ -442,7 +519,8 @@ export const food_full_menu_2 = [
             description:
               "Roasted mushroom soup made with fresh button mushroom, grilled chilli, fresh milk, fresh cream, carrots and ginger dash or organic Matina coffee",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
         ],
@@ -644,7 +722,11 @@ export const drinks_full_menu_2 = [
             description:
               "Pure Blend of fresh carrots, red apples, oranges and of course no water!",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free, vegan],
+            allergies: [
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
             addons: [""],
           },
           {
@@ -653,7 +735,11 @@ export const drinks_full_menu_2 = [
             description:
               "Blend of fresh pineapples, carrots, oranges, green apples and of course no water!",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free, vegan],
+            allergies: [
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
             addons: [""],
           },
           {
@@ -662,7 +748,11 @@ export const drinks_full_menu_2 = [
             description:
               "Fresh baby spinach, green apples, lime, coconut water, ginger, kale, cucmber and of course no water",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free, vegan],
+            allergies: [
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
             addons: [""],
           },
           {
@@ -670,7 +760,11 @@ export const drinks_full_menu_2 = [
             price: "30",
             description: "Orange, Carrot, Pineapple, Watermelon",
             image: fresh_juices_orange,
-            allergies: [gluten_free, refined_sugar_free, vegan],
+            allergies: [
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
             addons: [""],
           },
           {
@@ -679,7 +773,11 @@ export const drinks_full_menu_2 = [
             description:
               "Fresh baby spinach, green apples, lime, coconut water, ginger, kale, cucmber and of course no water",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free, vegan],
+            allergies: [
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
             addons: [""],
           },
         ],
@@ -693,7 +791,8 @@ export const drinks_full_menu_2 = [
             price: "30",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -701,7 +800,8 @@ export const drinks_full_menu_2 = [
             price: "25",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -709,7 +809,8 @@ export const drinks_full_menu_2 = [
             price: "20",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -717,7 +818,8 @@ export const drinks_full_menu_2 = [
             price: "30",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -725,7 +827,8 @@ export const drinks_full_menu_2 = [
             price: "30",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -733,7 +836,8 @@ export const drinks_full_menu_2 = [
             price: "35",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -741,7 +845,8 @@ export const drinks_full_menu_2 = [
             price: "25",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -749,7 +854,8 @@ export const drinks_full_menu_2 = [
             price: "20",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -757,7 +863,8 @@ export const drinks_full_menu_2 = [
             price: "25",
             description: "",
             image: iced_blue_latte,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -765,7 +872,8 @@ export const drinks_full_menu_2 = [
             price: "30",
             description: "",
             image: iced_strawberry_matcha_latte,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -773,7 +881,8 @@ export const drinks_full_menu_2 = [
             price: "30",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -781,7 +890,8 @@ export const drinks_full_menu_2 = [
             price: "25",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
         ],
@@ -794,7 +904,8 @@ export const drinks_full_menu_2 = [
             price: "20",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -802,7 +913,8 @@ export const drinks_full_menu_2 = [
             price: "25",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -810,7 +922,8 @@ export const drinks_full_menu_2 = [
             price: "30",
             description: "",
             image: charcoal_latte,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -818,7 +931,8 @@ export const drinks_full_menu_2 = [
             price: "25",
             description: "",
             image: turmeric_latte,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -826,7 +940,8 @@ export const drinks_full_menu_2 = [
             price: "25",
             description: "",
             image: flat_white_and_cappuccino,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -834,7 +949,8 @@ export const drinks_full_menu_2 = [
             price: "20",
             description: "",
             image: macchiato,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -842,7 +958,8 @@ export const drinks_full_menu_2 = [
             price: "25",
             description: "",
             image: matcha_latte,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -850,7 +967,8 @@ export const drinks_full_menu_2 = [
             price: "25",
             description: "",
             image: mocha,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -858,7 +976,8 @@ export const drinks_full_menu_2 = [
             price: "25",
             description: "",
             image: hot_chocolate,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -866,7 +985,8 @@ export const drinks_full_menu_2 = [
             price: "20",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -874,7 +994,8 @@ export const drinks_full_menu_2 = [
             price: "20",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -882,7 +1003,8 @@ export const drinks_full_menu_2 = [
             price: "25",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -890,7 +1012,8 @@ export const drinks_full_menu_2 = [
             price: "20",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
         ],
@@ -903,7 +1026,8 @@ export const drinks_full_menu_2 = [
             price: "20",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -911,7 +1035,8 @@ export const drinks_full_menu_2 = [
             price: "20",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -919,7 +1044,8 @@ export const drinks_full_menu_2 = [
             price: "20",
             description: "",
             image: precious_oud_tea,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -927,7 +1053,8 @@ export const drinks_full_menu_2 = [
             price: "20",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -935,7 +1062,8 @@ export const drinks_full_menu_2 = [
             price: "20",
             description: "",
             image: arabian_night_loose,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -943,7 +1071,8 @@ export const drinks_full_menu_2 = [
             price: "20",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -951,7 +1080,8 @@ export const drinks_full_menu_2 = [
             price: "20",
             description: "",
             image: turmeric_green_tea_blend,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -959,7 +1089,8 @@ export const drinks_full_menu_2 = [
             price: "20",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
         ],
@@ -1010,7 +1141,8 @@ export const desserts_full_menu_2 = [
             price: "40",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -1018,7 +1150,8 @@ export const desserts_full_menu_2 = [
             price: "40",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -1026,7 +1159,11 @@ export const desserts_full_menu_2 = [
             price: "40",
             description: "",
             image: roasted_coffee_and_chocolate_mousse,
-            allergies: [recommended, gluten_free, refined_sugar_free],
+            allergies: [
+  { allergyName: "Chef's Recommendation", allergySrc: recommended },
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+],
             addons: [""],
           },
           {
@@ -1034,7 +1171,11 @@ export const desserts_full_menu_2 = [
             price: "35",
             description: "",
             image: rose_pistachio_eclair,
-            allergies: [recommended, gluten_free, refined_sugar_free],
+            allergies: [
+  { allergyName: "Chef's Recommendation", allergySrc: recommended },
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+],
             addons: [""],
           },
           {
@@ -1042,7 +1183,11 @@ export const desserts_full_menu_2 = [
             price: "40",
             description: "",
             image: placeholder,
-            allergies: [recommended, gluten_free, refined_sugar_free],
+            allergies: [
+  { allergyName: "Chef's Recommendation", allergySrc: recommended },
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+],
             addons: [""],
           },
           {
@@ -1050,7 +1195,8 @@ export const desserts_full_menu_2 = [
             price: "35",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
         ],
@@ -1063,7 +1209,8 @@ export const desserts_full_menu_2 = [
             price: "30",
             description: "",
             image: pistachio_hazelnut_tart,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -1071,7 +1218,8 @@ export const desserts_full_menu_2 = [
             price: "30",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -1079,7 +1227,8 @@ export const desserts_full_menu_2 = [
             price: "30",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
         ],
@@ -1092,7 +1241,8 @@ export const desserts_full_menu_2 = [
             price: "35",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -1100,7 +1250,8 @@ export const desserts_full_menu_2 = [
             price: "35",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -1108,7 +1259,11 @@ export const desserts_full_menu_2 = [
             price: "35",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free, vegan],
+            allergies: [
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
             addons: [""],
           },
         ],
@@ -1121,7 +1276,11 @@ export const desserts_full_menu_2 = [
             price: "40",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free, vegan],
+            allergies: [
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
             addons: [""],
           },
           {
@@ -1129,7 +1288,8 @@ export const desserts_full_menu_2 = [
             price: "40",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -1137,7 +1297,8 @@ export const desserts_full_menu_2 = [
             price: "40",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -1145,7 +1306,8 @@ export const desserts_full_menu_2 = [
             price: "40",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -1153,7 +1315,8 @@ export const desserts_full_menu_2 = [
             price: "40",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -1161,7 +1324,8 @@ export const desserts_full_menu_2 = [
             price: "40",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
         ],
@@ -1174,7 +1338,8 @@ export const desserts_full_menu_2 = [
             price: "30",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -1182,7 +1347,11 @@ export const desserts_full_menu_2 = [
             price: "30",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free, vegan],
+            allergies: [
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
             addons: [""],
           },
           {
@@ -1190,7 +1359,8 @@ export const desserts_full_menu_2 = [
             price: "30",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
           {
@@ -1198,7 +1368,8 @@ export const desserts_full_menu_2 = [
             price: "30",
             description: "",
             image: placeholder,
-            allergies: [gluten_free, refined_sugar_free],
+            allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
             addons: [""],
           },
         ],
@@ -1206,3 +1377,4 @@ export const desserts_full_menu_2 = [
     ],
   },
 ];
+

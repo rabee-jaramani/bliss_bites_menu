@@ -15,7 +15,7 @@ export default function Card({ item }: any) {
           <div className="allergies-div">
             {item.allergies.map((icon: any) => {
               return (
-                <img key={icon.toString()} src={icon} alt={icon.toString()} />
+                <img key={icon.allergyName} src={icon.allergySrc} alt={icon.allergyName} />
               );
             })}
           </div>

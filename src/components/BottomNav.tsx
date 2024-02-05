@@ -1,10 +1,10 @@
 import * as React from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import KebabDiningOutlinedIcon from "@mui/icons-material/KebabDiningOutlined";
-import RamenDiningOutlinedIcon from "@mui/icons-material/RamenDiningOutlined";
 import CookieOutlinedIcon from "@mui/icons-material/CookieOutlined";
 import CloudOutlinedIcon from "@mui/icons-material/CloudOutlined";
+import LocalBarIcon from '@mui/icons-material/LocalBar';
+import RestaurantIcon from '@mui/icons-material/Restaurant';
 export default function BottomNav({
   selectedFB_type,
   setSelectedFB_type,
@@ -19,7 +19,7 @@ export default function BottomNav({
       setSelectedCollection('BREAKFAST');
       scrollTo("collection", 'BREAKFAST');
     }
-    if(newValue==='Drinks'){
+    if(newValue==='Beverages'){
       setSelectedCollection('BEVERAGES');
       scrollTo("collection", 'BEVERAGES');
     }
@@ -38,14 +38,14 @@ export default function BottomNav({
         aria-label="icon label tabs example"
       >
         <Tab
-          icon={<KebabDiningOutlinedIcon fontSize="small" />}
+          icon={<RestaurantIcon fontSize="small" />}
           label="Food"
           value="Food"
         />
         <Tab
-          icon={<RamenDiningOutlinedIcon fontSize="small" />}
-          label="Drinks"
-          value="Drinks"
+          icon={<LocalBarIcon fontSize="small" />}
+          label="Beverages"
+          value="Beverages"
         />
         <Tab
           icon={<CookieOutlinedIcon fontSize="small" />}

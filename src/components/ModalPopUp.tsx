@@ -5,7 +5,6 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import chef_recommendations from "../images/icons/chef_recommendations.svg";
 const style = {
   position: "absolute" as "absolute",
   top: "50%",
@@ -54,22 +53,18 @@ export default function ModalPopUp({ itemDetails }: any) {
             <img src={itemDetails.image} alt={itemDetails.itemName} />
           </div>
           <div className="details-div">
-            {itemDetails.allergies[0].toString().includes("recommended") ? (
+            {itemDetails.allergies[0]!==""?
+             itemDetails.allergies[0].allergyName.toLowerCase().includes(`chef`) ? (
               <>
-                <img
-                  src={itemDetails.allergies[0]}
-                  alt="recommended by the chef"
-                  width={35}
-                />
-                <img
-                  src={chef_recommendations}
-                  alt="chef's recommendations"
-                  width={80}
-                />
+               <div className="popup-icon-name-div"><img alt={itemDetails.allergies[0].allergyName} width={25} src={itemDetails.allergies[0].allergySrc}/><span>{itemDetails.allergies[0].allergyName}</span></div>
               </>
             ) : (
               ""
-            )}
+            )
+            :
+            ""
+            }
+           
             <div className="under-image-div">
               <Typography
                 className="popup-title"
@@ -115,7 +110,21 @@ export default function ModalPopUp({ itemDetails }: any) {
             ) : (
               ""
             )}
-
+          {/* allergies */}
+                {
+                itemDetails.allergies[0]!==""?
+                <div className="allergies-icons-div">
+                  {itemDetails.allergies.map((allergy:any)=>{
+                  return <div className="popup-icon-name-div">
+                    {
+                      allergy.allergyName.toLowerCase().includes(`chef`)?'':<><img alt={allergy.allergyName} width={25} src={allergy.allergySrc}/><span>{allergy.allergyName}</span></>
+                    }
+                    
+                    </div>
+                  })}
+                  </div>:
+                ""
+                }
             {itemDetails.addons[0] !== "" ? (
               <div className="add-on-div">
                 <Typography
