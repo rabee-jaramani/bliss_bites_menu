@@ -3,13 +3,16 @@ import Banner from "./banner/Banner";
 import BottomNav from "./components/BottomNav";
 import Footer from "./footer/Footer";
 
-import { food_full_menu_2 } from "./data2";
-import { drinks_full_menu_2 } from "./data2";
-import { desserts_full_menu_2 } from "./data2";
+import { food } from "./data/food";
+import { drinks } from "./data/drinks";
+import { desserts } from "./data/desserts";
+import { chef_must_have_sides } from "./data/chef_must_have_sides";
+import { vegan_plant_based } from "./data/vegan_plant_based";
 import { menu_collections } from "./data2";
 import { food_categories } from "./data2";
 import { drinks_categories } from "./data2";
 import { desserts_categories } from "./data2";
+import { chef_must_have_categories } from "./data2";
 import TopMenu from "./top_menu/TopMenu";
 import FB_MENU from "./fb_menu/FB_MENU";
 function App() {
@@ -52,6 +55,7 @@ function App() {
     ...food_categories,
     ...drinks_categories,
     ...desserts_categories,
+    ...chef_must_have_categories
   ];
 
   // state to handle fb_type change food drinks dessrts
@@ -102,7 +106,16 @@ function App() {
         <FB_MENU
           selectedFB_type={selectedFB_type}
           handleFB_Change={handleFB_Change}
-          FB_List_To_Render={food_full_menu_2}
+          FB_List_To_Render={food}
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
+          selectedCollection={selectedCollection}
+          setSelectedCollection={setSelectedCollection}
+        />
+         <FB_MENU
+          selectedFB_type={selectedFB_type}
+          handleFB_Change={handleFB_Change}
+          FB_List_To_Render={chef_must_have_sides}
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
           selectedCollection={selectedCollection}
@@ -111,7 +124,7 @@ function App() {
         <FB_MENU
           selectedFB_type="Drinks"
           handleFB_Change={handleFB_Change}
-          FB_List_To_Render={drinks_full_menu_2}
+          FB_List_To_Render={drinks}
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
           selectedCollection={selectedCollection}
@@ -120,7 +133,17 @@ function App() {
         <FB_MENU
           selectedFB_type="Desserts"
           handleFB_Change={handleFB_Change}
-          FB_List_To_Render={desserts_full_menu_2}
+          FB_List_To_Render={desserts}
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
+          selectedCollection={selectedCollection}
+          setSelectedCollection={setSelectedCollection}
+        />
+       
+          <FB_MENU
+          selectedFB_type="Vegan / Plant Based"
+          handleFB_Change={handleFB_Change}
+          FB_List_To_Render={vegan_plant_based}
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
           selectedCollection={selectedCollection}

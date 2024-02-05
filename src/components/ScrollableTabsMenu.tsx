@@ -26,7 +26,7 @@ const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
           value={selectedCollection}
           onChange={handleChange}
           variant="scrollable"
-          scrollButtons={false}
+          scrollButtons={true}
           aria-label="visible arrows tabs example"
           sx={{
             [`& .${tabsClasses.scrollButtons}`]: {

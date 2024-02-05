@@ -1,0 +1,227 @@
+import placeholder from "../images/placeholder.webp";
+
+import gluten_free from "../images/icons/gluten_free.svg";
+import recommended from "../images/icons/recommended.svg";
+import refined_sugar_free from "../images/icons/refined_sugar_free.svg";
+import spicy from "../images/icons/spicy.svg";
+import vegan from "../images/icons/vegan.svg";
+import sugar_free from "../images/icons/refined_sugar_free.svg";
+import lean_green from "../images/items/lean_green.webp"
+
+
+export const vegan_plant_based = [{
+  parentCatName: "Vegan Plant Based",
+  parentCatCollection: [{
+          categoryName: "Acai of Relief",
+          items: [{
+                  itemName: 'BERRY BLISS ACAI',
+                  price: '45',
+                  description: 'Fresh banana, fresh berries, in-house granola with chia seeds',
+                  image: placeholder,
+                  allergies: [
+                    { allergyName: "Chef's Recommendation", allergySrc: recommended },
+                    { allergyName: 'Gluten Free', allergySrc: gluten_free },
+                    { allergyName: 'Sugar Free', allergySrc: sugar_free },
+                    { allergyName: 'Vegan', allergySrc: vegan },
+                  ],
+                  addons: ['1. In-House Granola AED 5', '2. Steel Cut Oats AED 5', '3. Maple Syrup AED 10', '4. Coconut agave syrup', ' 5. Desiccated Coconut Flakes AED 5 ', '6. Sunflower Seeds AED 5', '7. Pistachio crème AED 5']
+              },
+              {
+                  itemName: 'TROPICAL BOON ACAI',
+                  price: '45',
+                  description: 'Fresh passion fruit, fresh mango, in-house granola',
+                  image: placeholder,
+                  allergies: [
+                    { allergyName: 'Gluten Free', allergySrc: gluten_free },
+                    { allergyName: 'Sugar Free', allergySrc: sugar_free },
+                    { allergyName: 'Vegan', allergySrc: vegan },
+                  ],
+                  addons: ['1. In-House Granola AED 5', '2. Steel Cut Oats AED 5', '3. Maple Syrup AED 10', '4. Coconut agave syrup', '5. Desiccated Coconut Flakes AED 5 ', '6. Sunflower Seeds AED 5', '7. Pistachio crème AED 5']
+              },
+              {
+                  itemName: 'SUPER FOOD CENTRAL ACAI',
+                  price: '45',
+                  description: 'Sliced banana, peanut butter, coconut flakes and in-house granola',
+                  image: placeholder,
+                  allergies: [
+                    { allergyName: 'Gluten Free', allergySrc: gluten_free },
+                    { allergyName: 'Sugar Free', allergySrc: sugar_free },
+                    { allergyName: 'Vegan', allergySrc: vegan },
+                  ],
+                  addons: ['1. In-House Granola AED 5', '2. Steel Cut Oats AED 5', '3. Maple Syrup AED 10', '4. Coconut agave syrup', ' 5. Desiccated Coconut Flakes AED 5 ', '6. Sunflower Seeds AED 5', '7. Pistachio crème AED 5']
+              },
+          ],
+      },
+      {
+          categoryName: "Salads",
+          items: [{
+                  itemName: 'MERC MEXICO SALAD',
+                  price: '50',
+                  description: 'Guacamole, baby spinach, feta cheese, cherry tomatoes, pecan nuts and in-house gluten-free and vegan nachos and crackers',
+                  image: placeholder,
+                  allergies: [
+                    { allergyName: "Chef's Recommendation", allergySrc: recommended },
+                    { allergyName: 'Gluten Free', allergySrc: gluten_free },
+                    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+                    { allergyName: 'Vegan', allergySrc: vegan },
+                  ],
+                  addons: ['1. Grilled Chicken AED 20', '2. Norweigian Salmon AED 20', '3. Boiled Eggs AED 10', '4. Poached Eggs AED 10', '5. Sweet Potato Fries AED 15', '6. Parmesan AED 5']
+              },
+              {
+                  itemName: 'HEALTHY HARVEST',
+                  price: '50',
+                  description: 'Tri-colour quinoa, smoked broccoli, fresh beetroot, feta cheese, carrots, cucumber and mixed greens',
+                  image: placeholder,
+                  allergies: [
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
+                  addons: ['1. Grilled Chicken AED 20', '2. Norweigian Salmon AED 20', '3. Boiled Eggs AED 10', '4. Poached Eggs AED 10', '5. Sweet Potato Fries AED 15', '6. Parmesan AED 5']
+              },
+          ],
+      },
+      {
+          categoryName: "Bowls",
+          items: [{
+                  itemName: 'RUSTIC',
+                  price: '50',
+                  description: 'Countryside lentils, chargrilled broccoli, and mango passion fruit chilli chutney served with grilled vegetables',
+                  image: placeholder,
+                  allergies: [
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Spicy', allergySrc: spicy },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
+                  addons: ['']
+              },
+              {
+                  itemName: 'WOK TO WALK',
+                  price: '50',
+                  description: 'Rice noodles, in-house vegan sriracha, sriracha glazed tofu, grilled mushrooms and asparagus',
+                  image: placeholder,
+                  allergies: [
+  { allergyName: "Chef's Recommendation", allergySrc: recommended },
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Spicy', allergySrc: spicy },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
+                  addons: ['']
+              },
+              {
+                  itemName: 'KHAMEER',
+                  price: '50',
+                  description: 'Generous serving of green hummus, in-house beet root pita bread, grilled halloumi cheese, chickpea salad served with grilled veggies and garlic foam',
+                  image: placeholder,
+                  allergies: [
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
+                  addons: ['']
+              },
+          ],
+      },
+      {
+          categoryName: "Wraps and Crepes",
+          items: [{
+                  itemName: 'TEMPEH PEPPER',
+                  price: '55',
+                  description: 'Scrambled tempeh with curry chowder served with in-house preserves and vegan mayo',
+                  image: placeholder,
+                  allergies: [
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Spicy', allergySrc: spicy },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
+                  addons: ['']
+              },
+              {
+                  itemName: 'BEETROOT SRIRACHA',
+                  price: '55',
+                  description: 'Tofu glazed in sriracha, chargrilled brocolli & in-house sriracha mayo wrapped in lettuce & kale',
+                  image: placeholder,
+                  allergies: [
+  { allergyName: "Chef's Recommendation", allergySrc: recommended },
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Spicy', allergySrc: spicy },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
+                  addons: ['']
+              },
+          ],
+      },
+      {
+          categoryName: "No Dough Burger",
+          items: [{
+                  itemName: 'LEAN GREEN',
+                  price: '55',
+                  description: 'Quinoa Burger: roasted red bell pepper, cucumber pickles, caramelised onions, cheddar cheese, almond cream cheese and sweet potato fries',
+                  image: lean_green,
+                  allergies: [
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
+                  addons: ['Sesame burger bun bread optional']
+              },
+              {
+                  itemName: 'MR. PROMISE',
+                  price: '65',
+                  description: 'Jackfruit Vegan Chicken Burger: roasted bell pepper, garlic toum served on a bed of fresh lettuce and baby spinach',
+                  image: placeholder,
+                  allergies: [
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
+                  addons: ['Sesame burger bun bread optional']
+              },
+          ],
+      },
+      {
+          categoryName: "Pasta",
+          items: [{
+                  itemName: 'Al Pomodoro',
+                  price: '55',
+                  description: 'In-house gluten-free pasta with gluten-free & vegan fresh tomato sauce, fresh herbs and paremsan with gluten-free garlic bread',
+                  image: placeholder,
+                  allergies: [
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
+                  addons: ['1. Chargrilled Tempeh AED 15', '2. Chargrilled veggies AED 15', '3. Grilled Chicken AED 20']
+              },
+              {
+                  itemName: 'Alfredo',
+                  price: '55',
+                  description: 'In-house gluten-free pasta tossed with in-house vegan cream with semi dried grilled veggies and gluten-free garlic bread',
+                  image: placeholder,
+                  allergies: [
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
+                  addons: ['1. Chargrilled Tempeh AED 15', '2. Chargrilled veggies AED 15', '3. Grilled Chicken AED 20']
+              },
+              {
+                  itemName: 'Bliss',
+                  price: '55',
+                  description: 'In-house sauce with pestelled spices & herbs blended with vegan cream served with gluten-free garlic bread',
+                  image: placeholder,
+                  allergies: [
+  { allergyName: 'Gluten Free', allergySrc: gluten_free },
+  { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  { allergyName: 'Vegan', allergySrc: vegan },
+],
+                  addons: ['1. Chargrilled Tempeh AED 15', '2. Chargrilled veggies AED 15', '3. Grilled Chicken AED 20']
+              },
+          ],
+      },
+  ],
+}, ];
