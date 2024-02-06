@@ -38,7 +38,10 @@ export default function FB_CAT({ category, setSelectedCategory }: any) {
         id={category.categoryName.replace(/[\s-']/g, "").toLowerCase()}
         ref={targetElementRef}
       >
-        {category.categoryName}
+        {category.categoryName==='Plated Desserts'?
+        <>{category.categoryName}<br/><span style={{fontSize:'12px'}}>*Inquire with our staff about today's specials</span></>:
+        category.categoryName
+      }
       </h2>
       <div className="fb-cat-grid">
         {category.items.map((item: { itemName: any }) => {

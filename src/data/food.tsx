@@ -92,7 +92,8 @@ export const food = [
               price: "45",
               description: "Fresh passion fruit, fresh mango, in-house granola",
               image: tropical_boon_acai,
-              allergies: [              {allergyName:`Chef's Recommendation`,allergySrc:recommended},
+              allergies: [             
+                {allergyName:`Chef's Recommendation`,allergySrc:recommended},
                 {allergyName:`Gluten Free`,allergySrc:gluten_free},
                 {allergyName:`Sugar Free`,allergySrc:sugar_free},
                 {allergyName:`Vegan`,allergySrc:vegan},],
@@ -485,7 +486,7 @@ export const food = [
               price: "45",
               description:
                 "Roasted mushroom soup made with fresh button mushroom, grilled chilli, fresh milk, fresh cream, carrots and ginger dash or organic Matina coffee",
-              image: placeholder,
+              image: mushroom_cappuccino,
               allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
     { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
               addons: [""],
@@ -501,7 +502,11 @@ export const food = [
               description:
                 "Quinoa Burger: roasted red bell pepper, cucumber pickles, caramelised onions, cheddar cheese, almond cream cheese and sweet potato fries",
               image: placeholder,
-              allergies: [""],
+              allergies: [
+                { allergyName: 'Gluten Free', allergySrc: gluten_free },
+                { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+                { allergyName: 'Vegan', allergySrc: vegan }
+              ],
               addons: ["Sesame burger bun bread optional"],
             },
             {
@@ -510,7 +515,11 @@ export const food = [
               description:
                 "Jackfruit Vegan Chicken Burger: roasted bell pepper, garlic toum served on a bed of fresh lettuce and baby spinach",
               image: mr_promise,
-              allergies: [""],
+              allergies: [
+                { allergyName: 'Gluten Free', allergySrc: gluten_free },
+                { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+                { allergyName: 'Vegan', allergySrc: vegan }
+              ],
               addons: ["Sesame burger bun bread optional"],
             },
           ],
@@ -524,7 +533,12 @@ export const food = [
               description:
                 "Countryside lentils, chargrilled broccoli, and mango passion fruit chilli chutney served with grilled vegetables",
               image: rustic,
-              allergies: [""],
+              allergies: [
+                { allergyName: 'Gluten Free', allergySrc: gluten_free },
+                { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+                { allergyName: 'Spicy', allergySrc: spicy },
+                { allergyName: 'Vegan', allergySrc: vegan }
+              ],
               addons: [""],
             },
             {
@@ -533,7 +547,10 @@ export const food = [
               description:
                 "Rustic red beans, red rice risotto, fresh guacamole and in-house nachos and sour cream",
               image: adorabowl,
-              allergies: [""],
+              allergies: [
+                { allergyName: 'Gluten Free', allergySrc: gluten_free },
+                { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free }
+              ],
               addons: [""],
             },
             {
@@ -542,7 +559,13 @@ export const food = [
               description:
                 "Rice noodles, in-house vegan sriracha, sriracha glazed tofu, grilled mushrooms and asparagus",
               image: work_to_walk,
-              allergies: [""],
+              allergies: [
+                { allergyName: `Chef's Recommendation`, allergySrc: recommended },
+                { allergyName: 'Gluten Free', allergySrc: gluten_free },
+                { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+                { allergyName: 'Spicy', allergySrc: spicy },
+                { allergyName: 'Vegan', allergySrc: vegan }
+              ],
               addons: [""],
             },
             {
@@ -551,7 +574,11 @@ export const food = [
               description:
                 "Generous serving of green hummus, in-house beet root pita bread, grilled halloumi cheese, chickpea salad served with grilled veggies and garlic foam",
               image: khameer,
-              allergies: [""],
+              allergies: [
+                { allergyName: 'Gluten Free', allergySrc: gluten_free },
+                { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+                { allergyName: 'Vegan', allergySrc: vegan }
+              ],
               addons: [""],
             },
           ],
@@ -565,7 +592,11 @@ export const food = [
               description:
                 "In-house gluten-free pasta with gluten-free & vegan fresh tomato sauce, fresh herbs and paremsan with gluten-free garlic bread",
               image: placeholder,
-              allergies: [""],
+              allergies: [
+                { allergyName: 'Gluten Free', allergySrc: gluten_free },
+                { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+                { allergyName: 'Vegan', allergySrc: vegan }
+              ],
               addons: [
                 "1. Chargrilled Tempeh AED 15",
                 "2. Chargrilled veggies AED 15",
@@ -578,7 +609,11 @@ export const food = [
               description:
                 "In-house gluten-free pasta tossed with in-house vegan cream with semi dried grilled veggies and gluten-free garlic bread",
               image: placeholder,
-              allergies: [""],
+              allergies: [
+                { allergyName: 'Gluten Free', allergySrc: gluten_free },
+                { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+                { allergyName: 'Vegan', allergySrc: vegan }
+              ],
               addons: [
                 "1. Chargrilled Tempeh AED 15",
                 "2. Chargrilled veggies AED 15",
@@ -591,7 +626,11 @@ export const food = [
               description:
                 "In-house sauce with pestelled spices & herbs blended with vegan cream served with gluten-free garlic bread",
               image: placeholder,
-              allergies: [""],
+              allergies: [
+                { allergyName: 'Gluten Free', allergySrc: gluten_free },
+                { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+                { allergyName: 'Vegan', allergySrc: vegan }
+              ],
               addons: [
                 "1. Chargrilled Tempeh AED 15",
                 "2. Chargrilled veggies AED 15",

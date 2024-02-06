@@ -15,7 +15,7 @@ const style = {
   bgcolor: "background.paper",
   boxShadow: 24,
   // p: 2,
-  borderRadius: "10px",
+  borderRadius: "25px",
   maxHeight: "80%",
   overflowY: "scroll",
 };
@@ -126,30 +126,53 @@ export default function ModalPopUp({ itemDetails }: any) {
                   </div>:
                 ""
                 }
-            {itemDetails.addons[0] !== "" ? (
-              <div className="add-on-div">
-                <Typography
-                  className="popup-text"
-                  id="modal-modal-addon"
-                  sx={{ mt: 2 }}
-                  fontSize={14}
-                >
-                  <strong
-                    style={{
-                      color: "#045768",
-                      fontFamily: "'Libre Caslon Text', serif",
-                    }}
-                  >
-                    Add On:
-                  </strong>
-                </Typography>
-                {itemDetails.addons.map((addon: any, index: any) => {
-                  return <span key={index}>{addon}</span>;
-                })}
-              </div>
-            ) : (
-              ""
-            )}
+                {/* below check if te item is for Chef Must Have to remove the add on */}
+                {
+                !itemDetails.serve1?
+                itemDetails.addons[0] !== "" ? (
+                  <div className="add-on-div">
+                    <Typography
+                      className="popup-text"
+                      id="modal-modal-addon"
+                      sx={{ mt: 2 }}
+                      fontSize={14}
+                    >
+                      <strong
+                        style={{
+                          color: "#045768",
+                          fontFamily: "'Libre Caslon Text', serif",
+                        }}
+                      >
+                        Add On:
+                      </strong>
+                    </Typography>
+                    {itemDetails.addons.map((addon: any, index: any) => {
+                      return <span key={index}>{addon}</span>;
+                    })}
+                  </div>
+                ) : (
+                  ""
+                ):
+                <div className="add-on-div">
+                    <Typography
+                      className="popup-text"
+                      id="modal-modal-addon"
+                      sx={{ mt: 2 }}
+                      fontSize={14}
+                    >
+                      <strong
+                        style={{
+                          color: "#045768",
+                          fontFamily: "'Libre Caslon Text', serif",
+                        }}
+                      >
+                        Serves 1
+                      </strong>
+                    </Typography>
+                  </div>
+                }
+          {/* END check if te item is for Chef Must Have to remove the add on */}
+
             <Typography
               className="no-added"
               id="modal-info-bottom"
@@ -157,12 +180,12 @@ export default function ModalPopUp({ itemDetails }: any) {
               fontSize={14}
               component="div"
             >
-              <strong>No added emulsifiers and preservatives:</strong>
+              <strong style={{fontSize:'12px'}}>No added emulsifiers and preservatives:</strong>
               <ul style={{ listStyleType: "none" }}>
-                <li>*Kindly inquire for plant-based alternatives</li>
-                <li>*Kindly ask for Nut free and Dairy free option</li>
-                <li>*All our dishes are made with millets</li>
-                <li>*All our dishes contain coconut and date sugar</li>
+                <li style={{fontSize:'11px'}}>*Kindly inquire for plant-based alternatives</li>
+                <li style={{fontSize:'11px'}}>*Kindly ask for Nut free and Dairy free option</li>
+                <li style={{fontSize:'11px'}}>*All our dishes are made with millets</li>
+                <li style={{fontSize:'11px'}}>*All our dishes contain coconut and date sugar</li>
               </ul>
               <br />
             </Typography>

@@ -31,6 +31,18 @@ export const drinks = [
           categoryName: "Mocktails - Detox Juice",
           items: [
             {
+              itemName: "Fresh Juices",
+              price: "30",
+              description: "Orange, Carrot, Pineapple, Watermelon",
+              image: fresh_juices_orange,
+              allergies: [
+    { allergyName: 'Gluten Free', allergySrc: gluten_free },
+    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+    { allergyName: 'Vegan', allergySrc: vegan },
+  ],
+              addons: [""],
+            },
+            {
               itemName: "Booster",
               price: "35",
               description:
@@ -69,18 +81,7 @@ export const drinks = [
   ],
               addons: [""],
             },
-            {
-              itemName: "Fresh Juices",
-              price: "30",
-              description: "Orange, Carrot, Pineapple, Watermelon",
-              image: fresh_juices_orange,
-              allergies: [
-    { allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
-    { allergyName: 'Vegan', allergySrc: vegan },
-  ],
-              addons: [""],
-            },
+            
             {
               itemName: "Beetroot",
               price: "35",
@@ -101,8 +102,17 @@ export const drinks = [
           categoryName: "Iced Coffee",
           items: [
             {
-              itemName: "Iced Spanish Latte",
-              price: "30",
+              itemName: "Iced Cortado",
+              price: "20",
+              description: "",
+              image: cortado, 
+              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
+              addons: [""],
+            },
+            {
+              itemName: "Iced Americano",
+              price: "20",
               description: "",
               image: placeholder,
               allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
@@ -119,10 +129,37 @@ export const drinks = [
               addons: [""],
             },
             {
-              itemName: "Iced Cortado",
-              price: "20",
+              itemName: "Iced Latte",
+              price: "25",
               description: "",
-              image: cortado, 
+              image: placeholder,
+              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
+              addons: [""],
+            },
+            {
+              itemName: "Iced Blue Latte",
+              price: "25",
+              description: "",
+              image: iced_blue_latte,
+              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
+              addons: [""],
+            },
+            {
+              itemName: "Orange Hibiscus",
+              price: "25",
+              description: "",
+              image: orange_hibiscus,
+              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
+              addons: [""],
+            },
+            {
+              itemName: "Iced Spanish Latte",
+              price: "30",
+              description: "",
+              image: placeholder,
               allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
     { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
               addons: [""],
@@ -146,42 +183,6 @@ export const drinks = [
               addons: [""],
             },
             {
-              itemName: "Date & Caramel Frappe",
-              price: "35",
-              description: "",
-              image: placeholder,
-              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
-              addons: [""],
-            },
-            {
-              itemName: "Iced Latte",
-              price: "25",
-              description: "",
-              image: placeholder,
-              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
-              addons: [""],
-            },
-            {
-              itemName: "Iced Americano",
-              price: "20",
-              description: "",
-              image: placeholder,
-              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
-              addons: [""],
-            },
-            {
-              itemName: "Iced Blue Latte",
-              price: "25",
-              description: "",
-              image: iced_blue_latte,
-              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
-              addons: [""],
-            },
-            {
               itemName: "Iced Strawberry Matcha Latte",
               price: "30",
               description: "",
@@ -200,14 +201,19 @@ export const drinks = [
               addons: [""],
             },
             {
-              itemName: "Orange Hibiscus",
-              price: "25",
+              itemName: "Date & Caramel Frappe",
+              price: "35",
               description: "",
-              image: orange_hibiscus,
+              image: placeholder,
               allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
     { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
               addons: [""],
             },
+           
+           
+          
+           
+           
           ],
         },
         {
@@ -215,6 +221,44 @@ export const drinks = [
           items: [
             {
               itemName: "Piccolo",
+              price: "20",
+              description: "",
+              image: placeholder,
+              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
+              addons: [""],
+            },
+            {
+              itemName: "Macchiato",
+              price: "20",
+              description: "",
+              image: macchiato,
+              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
+              addons: [""],
+            },
+           
+            {
+              itemName: "Espresso",
+              price: "20",
+              description: "",
+              image: placeholder,
+              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
+              addons: [""],
+            },
+            {
+              itemName: "Cafè Latte",
+              price: "20",
+              description: "",
+              image: placeholder,
+              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
+              addons: [""],
+            },
+
+            {
+              itemName: "Americano",
               price: "20",
               description: "",
               image: placeholder,
@@ -231,15 +275,7 @@ export const drinks = [
     { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
               addons: [""],
             },
-            {
-              itemName: "Charcoal Latte",
-              price: "30",
-              description: "",
-              image: charcoal_latte,
-              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
-              addons: [""],
-            },
+            
             {
               itemName: "Turmeric Latte",
               price: "25",
@@ -258,15 +294,7 @@ export const drinks = [
     { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
               addons: [""],
             },
-            {
-              itemName: "Macchiato",
-              price: "20",
-              description: "",
-              image: macchiato,
-              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
-              addons: [""],
-            },
+
             {
               itemName: "Matcha Latte",
               price: "25",
@@ -295,24 +323,6 @@ export const drinks = [
               addons: [""],
             },
             {
-              itemName: "Espresso",
-              price: "20",
-              description: "",
-              image: placeholder,
-              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
-              addons: [""],
-            },
-            {
-              itemName: "Cafè Latte",
-              price: "20",
-              description: "",
-              image: placeholder,
-              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
-              addons: [""],
-            },
-            {
               itemName: "Cappuccino",
               price: "25",
               description: "",
@@ -322,10 +332,10 @@ export const drinks = [
               addons: [""],
             },
             {
-              itemName: "Americano",
-              price: "20",
+              itemName: "Charcoal Latte",
+              price: "30",
               description: "",
-              image: placeholder,
+              image: charcoal_latte,
               allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
     { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
               addons: [""],

@@ -1,6 +1,7 @@
 import React from "react";
 import ModalPopUp from "../components/ModalPopUp";
 export default function Card({ item }: any) {
+  console.log('item',item)
   return (
     <div className="card">
       <img src={item.image} alt={item.itemName} />
@@ -23,7 +24,7 @@ export default function Card({ item }: any) {
           ""
         )}
         <div className="price-readmore">
-          <p className="add-on">Add On</p>
+          {item.serve1?<p className="add-on">Serves 1</p>:<p className="add-on">Add On</p>}
           <h3 className="item-price">
             <span className="aed">AED</span>
             {item.price}

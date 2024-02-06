@@ -3,13 +3,15 @@ import gluten_free from "../images/icons/gluten_free.svg";
 import recommended from "../images/icons/recommended.svg";
 import refined_sugar_free from "../images/icons/refined_sugar_free.svg";
 import vegan from "../images/icons/vegan.svg";
-import pistachio_hazelnut_tart from "../images/items/pistachio_hazelnut_tart.webp";
+import pistachio_hazelnut_creme from "../images/items/pistachio_hazelnut_creme.webp";
 import roasted_coffee_and_chocolate_mousse from "../images/items/roasted_coffee_&_chocolate_mousse.webp";
 import rose_pistachio_eclair from "../images/items/rose_pistachio_eclair.webp";
 import galaxie_gooye_raspberry_cake from "../images/items/galaxie_gooye_raspberry_cake.webp"
-import hazelnut_creme from  "../images/items/hazelnut_creme.webp"
+// import hazelnut_creme from  "../images/items/hazelnut_creme.webp"
 import mango_achia_pudding from "../images/items/mango_achia_pudding.webp"
 import tiramisu from "../images/items/tiramisu.webp"
+import pistachio_raspberry_mousse from "../images/items/pistachio_raspberry_mousse.webp"
+import pecan from "../images/items/pecan.webp"
   export const desserts = [
     {
       parentCatName: "BLISSFUL DESSERTS",
@@ -17,6 +19,29 @@ import tiramisu from "../images/items/tiramisu.webp"
         {
           categoryName: "Plated Desserts",
           items: [
+           
+
+            {
+              itemName: "Rose Pistachio Eclair",
+              price: "35",
+              description: "",
+              image: rose_pistachio_eclair,
+              allergies: [
+    { allergyName: "Chef's Recommendation", allergySrc: recommended },
+    { allergyName: 'Gluten Free', allergySrc: gluten_free },
+    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  ],
+              addons: [""],
+            },
+            {
+              itemName: "Tiramisu",
+              price: "35",
+              description: "",
+              image: tiramisu,
+              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
+              addons: [""],
+            },
             {
               itemName: "Galaxie Gooye Raspberry Cake",
               price: "40",
@@ -30,7 +55,7 @@ import tiramisu from "../images/items/tiramisu.webp"
               itemName: "Pistachio Raspberry Mousse",
               price: "40",
               description: "",
-              image: placeholder,
+              image: pistachio_raspberry_mousse,
               allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
     { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
               addons: [""],
@@ -40,18 +65,6 @@ import tiramisu from "../images/items/tiramisu.webp"
               price: "40",
               description: "",
               image: roasted_coffee_and_chocolate_mousse,
-              allergies: [
-    { allergyName: "Chef's Recommendation", allergySrc: recommended },
-    { allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
-  ],
-              addons: [""],
-            },
-            {
-              itemName: "Rose Pistachio Eclair",
-              price: "35",
-              description: "",
-              image: rose_pistachio_eclair,
               allergies: [
     { allergyName: "Chef's Recommendation", allergySrc: recommended },
     { allergyName: 'Gluten Free', allergySrc: gluten_free },
@@ -71,15 +84,7 @@ import tiramisu from "../images/items/tiramisu.webp"
   ],
               addons: [""],
             },
-            {
-              itemName: "Tiramisu",
-              price: "35",
-              description: "",
-              image: tiramisu,
-              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
-              addons: [""],
-            },
+
           ],
         },
         {
@@ -89,7 +94,7 @@ import tiramisu from "../images/items/tiramisu.webp"
               itemName: "Pistachio Hazelnut",
               price: "40",
               description: "",
-              image: pistachio_hazelnut_tart,
+              image: placeholder,
               allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
     { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
               addons: [""],
@@ -98,7 +103,7 @@ import tiramisu from "../images/items/tiramisu.webp"
               itemName: "Hazelnut Crème",
               price: "40",
               description: "",
-              image: hazelnut_creme,
+              image: placeholder,
               allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
     { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
               addons: [""],
@@ -107,12 +112,12 @@ import tiramisu from "../images/items/tiramisu.webp"
               itemName: "Pecan",
               price: "40",
               description: "",
-              image: placeholder,
+              image: pecan,
               allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
     { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
               addons: [""],
             },
-            {itemName:'Pistachio Cremè ',price:'40',description:'',image:placeholder,allergies: [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+            {itemName:'Pistachio Cremè ',price:'40',description:'',image:pistachio_hazelnut_creme,allergies: [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
             { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],addons:['']},
           ],
         },

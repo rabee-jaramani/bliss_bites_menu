@@ -33,7 +33,7 @@ const ScrollableTabsMenu: React.FC<ScrollableTabsMenuProps | any> = ({
               "&.Mui-disabled": { opacity: 0.3 },
             },
           }}
-          allowScrollButtonsMobile={false}
+          allowScrollButtonsMobile={true}
         >
           {selectedCollectionsTabs.map((item: any, index: any) => (
             <Tab
