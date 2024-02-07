@@ -177,7 +177,7 @@ export const vegan_plant_based = [{
           ],
       },
       {
-          categoryName: "Wraps and Crepes",
+          categoryName: "Wraps and Crêpes",
           items: [{
                   itemName: 'TEMPEH PEPPER',
                   price: '55',

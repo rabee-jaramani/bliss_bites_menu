@@ -42,6 +42,7 @@ export default function FB_CAT({ category, setSelectedCategory }: any) {
         <>{category.categoryName}<br/><span style={{fontSize:'12px'}}>*Inquire with our staff about today's specials</span></>:
         category.categoryName
       }
+      
       </h2>
       <div className="fb-cat-grid">
         {category.items.map((item: { itemName: any }) => {

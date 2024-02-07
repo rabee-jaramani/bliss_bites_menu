@@ -17,74 +17,47 @@ import pecan from "../images/items/pecan.webp"
       parentCatName: "BLISSFUL DESSERTS",
       parentCatCollection: [
         {
-          categoryName: "Plated Desserts",
+          categoryName: "Tea Cakes",
           items: [
-           
-
             {
-              itemName: "Rose Pistachio Eclair",
-              price: "35",
+              itemName: "Toffee Date Tea Cake",
+              price: "30",
               description: "",
-              image: rose_pistachio_eclair,
-              allergies: [
-    { allergyName: "Chef's Recommendation", allergySrc: recommended },
-    { allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
-  ],
+              image: placeholder,
+              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+            { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
               addons: [""],
             },
             {
-              itemName: "Tiramisu",
-              price: "35",
+              itemName: "Peacan Carrot Tea Cake",
+              price: "30",
               description: "",
-              image: tiramisu,
+              image: placeholder,
+              allergies: [
+            { allergyName: 'Gluten Free', allergySrc: gluten_free },
+            { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+            { allergyName: 'Vegan', allergySrc: vegan },
+          ],
+              addons: [""],
+            },
+            {
+              itemName: "Banana Pecan Nut Cake",
+              price: "30",
+              description: "",
+              image: placeholder,
               allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
     { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
               addons: [""],
             },
             {
-              itemName: "Galaxie Gooye Raspberry Cake",
-              price: "40",
+              itemName: "Almond Cinnamon",
+              price: "30",
               description: "",
-              image: galaxie_gooye_raspberry_cake,
+              image: placeholder,
               allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
     { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
               addons: [""],
             },
-            {
-              itemName: "Pistachio Raspberry Mousse",
-              price: "40",
-              description: "",
-              image: pistachio_raspberry_mousse,
-              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
-              addons: [""],
-            },
-            {
-              itemName: "Roasted Coffee & Chocolate Mousse",
-              price: "40",
-              description: "",
-              image: roasted_coffee_and_chocolate_mousse,
-              allergies: [
-    { allergyName: "Chef's Recommendation", allergySrc: recommended },
-    { allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
-  ],
-              addons: [""],
-            },
-            {
-              itemName: "Mango Chia Pudding",
-              price: "40",
-              description: "",
-              image: mango_achia_pudding,
-              allergies: [
-    { allergyName: "Chef's Recommendation", allergySrc: recommended },
-    { allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
-  ],
-              addons: [""],
-            },
-
           ],
         },
         {
@@ -219,49 +192,80 @@ import pecan from "../images/items/pecan.webp"
           ],
         },
         {
-          categoryName: "Tea Cakes",
+          categoryName: `Chef's Favourites Plated Desserts`,
           items: [
+           
+
             {
-              itemName: "Toffee Date Tea Cake",
-              price: "30",
+              itemName: "Rose Pistachio Eclair",
+              price: "35",
               description: "",
-              image: placeholder,
-              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
-              addons: [""],
-            },
-            {
-              itemName: "Peacan Carrot Tea Cake",
-              price: "30",
-              description: "",
-              image: placeholder,
+              image: rose_pistachio_eclair,
               allergies: [
+    { allergyName: "Chef's Recommendation", allergySrc: recommended },
     { allergyName: 'Gluten Free', allergySrc: gluten_free },
     { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
-    { allergyName: 'Vegan', allergySrc: vegan },
   ],
               addons: [""],
             },
             {
-              itemName: "Banana Pecan Nut Cake",
-              price: "30",
+              itemName: "Tiramisu",
+              price: "35",
               description: "",
-              image: placeholder,
+              image: tiramisu,
               allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
     { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
               addons: [""],
             },
             {
-              itemName: "Almond Cinnamon",
-              price: "30",
+              itemName: "Galaxie Gooye Raspberry Cake",
+              price: "40",
               description: "",
-              image: placeholder,
+              image: galaxie_gooye_raspberry_cake,
               allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
     { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
               addons: [""],
             },
+            {
+              itemName: "Pistachio Raspberry Mousse",
+              price: "40",
+              description: "",
+              image: pistachio_raspberry_mousse,
+              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
+              addons: [""],
+            },
+            {
+              itemName: "Roasted Coffee & Chocolate Mousse",
+              price: "40",
+              description: "",
+              image: roasted_coffee_and_chocolate_mousse,
+              allergies: [
+    { allergyName: "Chef's Recommendation", allergySrc: recommended },
+    { allergyName: 'Gluten Free', allergySrc: gluten_free },
+    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  ],
+              addons: [""],
+            },
+            {
+              itemName: "Mango Chia Pudding",
+              price: "40",
+              description: "",
+              image: mango_achia_pudding,
+              allergies: [
+    { allergyName: "Chef's Recommendation", allergySrc: recommended },
+    { allergyName: 'Gluten Free', allergySrc: gluten_free },
+    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  ],
+              addons: [""],
+            },
+
           ],
         },
+        
+        
+        
+        
       ],
     },
   ];

@@ -25,7 +25,7 @@ import strawberry_chilli_jam_with_toast from "./images/items/strawberry_chilli_j
 
 
 
-
+// Note you have to add vegan and 
 export const menu_collections = [
   { menu_name: "BREAKFAST", menu_img: Breakfast },
   { menu_name: "ALL DAY MENU", menu_img: All_Day_Menu },
@@ -42,7 +42,7 @@ export const food_categories = [
   "French Toast - Sweet",
   "French Toast - Savoury",
   "French Toast - Open Toasts",
-  "Wraps and Crepes",
+  "Wraps and Crêpes",
   "Salads",
   "Soups",
   "No Dough Burger",
@@ -62,7 +62,7 @@ export const drinks_categories = [
 
 export const desserts_collections = ["BLISSFUL DESSERTS"];
 export const desserts_categories = [
-  "Plated Desserts",
+  `Chef's Favourites Plated Desserts`,
   "Tarts",
   "Cheesecake",
   "Cakes Galore",

@@ -138,7 +138,7 @@ export const food = [
               itemName: "FREE RANGE ROOST",
               price: "55",
               description:
-                "Eggs Benedict: poached egg, in-house red kidney beans, sweet potato roasty, sliced avocado, served with in-house millet-based Toast with Tzatziki spread",
+                "Eggs Benedict: poached egg, in-house red kidney beans, sweet potato roasty, sliced avocado, served with in-house millet-based toast with tzatziki spread",
               image: free_range_roost,
               allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
     { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
@@ -168,7 +168,7 @@ export const food = [
               itemName: "I AM HUMBLED",
               price: "55",
               description:
-                "Scrambled eggs with choice of cheese, grilled vegetables served with out in-house millet-based cheddar jalapeno toast",
+                "Scrambled eggs with choice of cheese, grilled vegetables served with our in-house millet-based cheddar jalapeño toast",
               image: placeholder,
               allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
     { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
@@ -178,6 +178,33 @@ export const food = [
                 "3. Sweet potato fries AED 15",
                 "4. Special kidney beans AED 5",
               ],
+            },
+          ],
+        },
+        {
+          categoryName: "French Toast - Savoury",
+          items: [
+            {
+              itemName: "FORMAGE FRAIS",
+              price: "45",
+              description: "French toast with chilli chives cream cheese ",
+              image: fromage_frais,
+              allergies: [
+    { allergyName: "Chef's Recommendation", allergySrc: recommended },
+    { allergyName: 'Gluten Free', allergySrc: gluten_free },
+    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+    { allergyName: 'Spicy', allergySrc: spicy },
+  ],
+              addons: [""],
+            },
+            {
+              itemName: "TOMATOES SECADOS AL SOL",
+              price: "45",
+              description: "French toast with sundried tomato pesto cream cheese",
+              image: tomates_secados_alsol,
+              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
+              addons: [""],
             },
           ],
         },
@@ -239,33 +266,7 @@ export const food = [
             },
           ],
         },
-        {
-          categoryName: "French Toast - Savoury",
-          items: [
-            {
-              itemName: "FORMAGE FRAIS",
-              price: "45",
-              description: "French toast with chilli chives cream cheese ",
-              image: fromage_frais,
-              allergies: [
-    { allergyName: "Chef's Recommendation", allergySrc: recommended },
-    { allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
-    { allergyName: 'Spicy', allergySrc: spicy },
-  ],
-              addons: [""],
-            },
-            {
-              itemName: "TOMATOES SECADOS AL SOL",
-              price: "45",
-              description: "French toast with sundried tomato pesto cream cheese",
-              image: tomates_secados_alsol,
-              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
-              addons: [""],
-            },
-          ],
-        },
+        
         {
           categoryName: "French Toast - Open Toasts",
           items: [
@@ -373,43 +374,14 @@ export const food = [
       parentCatName: "ALL DAY MENU",
       parentCatCollection: [
         {
-          categoryName: "Wraps and Crepes",
+          categoryName: "Soups",
           items: [
             {
-              itemName: "TEMPEH PEPPER",
-              price: "55",
+              itemName: "ZESTY LADLE",
+              price: "45",
               description:
-                "Scrambled tempeh with curry chowder served with in-house preserves and vegan mayo",
-              image: tempeh_pepper_wrap,
-              allergies: [
-    { allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
-    { allergyName: 'Spicy', allergySrc: spicy },
-    { allergyName: 'Vegan', allergySrc: vegan },
-  ],
-              addons: [""],
-            },
-            {
-              itemName: "BEETROOT SRIRACHA",
-              price: "55",
-              description:
-                "Tofu glazed in sriracha, chargrilled brocolli & in-house sriracha mayo wrapped in lettuce & kale",
-              image: beetroot_sriracha,
-              allergies: [
-                { allergyName: "Chef's Recommendation", allergySrc: recommended },
-                { allergyName: 'Gluten Free', allergySrc: gluten_free },
-                { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
-                { allergyName: 'Spicy', allergySrc: spicy },
-                { allergyName: 'Vegan', allergySrc: vegan },
-              ],
-              addons: [""],
-            },
-            {
-              itemName: "CHICKEN CHARCOAL",
-              price: "60",
-              description:
-                "Chicken marinated in herbs and spices served on a charcoal crepe with a poached egg",
-              image: chicken_charcoal,
+                "Roasted red bell pepper, roasted tomatoes, roasted carrots, celery and vegetable stock",
+              image: zesty_ladle_soup,
               allergies: [
     { allergyName: "Chef's Recommendation", allergySrc: recommended },
     { allergyName: 'Gluten Free', allergySrc: gluten_free },
@@ -417,13 +389,24 @@ export const food = [
   ],
               addons: [""],
             },
+            {
+              itemName: "MUSHROOM CAPPUCCINO",
+              price: "45",
+              description:
+                "Roasted mushroom soup made with fresh button mushroom, grilled chilli, fresh milk, fresh cream, carrots and ginger dash or organic Matina coffee",
+              image: mushroom_cappuccino,
+              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
+    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
+              addons: [""],
+            },
           ],
         },
+        
         {
           categoryName: "Salads",
           items: [
             {
-              itemName: "MERC MEXICO SALAD",
+              itemName: "MERC MEXICO",
               price: "50",
               description:
                 "Guacamole, baby spinach, feta cheese, cherry tomatoes, pecan nuts and in-house gluten-free and vegan nachos and crackers",
@@ -465,65 +448,8 @@ export const food = [
             },
           ],
         },
-        {
-          categoryName: "Soups",
-          items: [
-            {
-              itemName: "ZESTY LADLE SOUP",
-              price: "45",
-              description:
-                "Roasted red bell pepper, roasted tomatoes, roasted carrots, celery and vegetable stock",
-              image: zesty_ladle_soup,
-              allergies: [
-    { allergyName: "Chef's Recommendation", allergySrc: recommended },
-    { allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
-  ],
-              addons: [""],
-            },
-            {
-              itemName: "MUSHROOM CAPPUCCINO",
-              price: "45",
-              description:
-                "Roasted mushroom soup made with fresh button mushroom, grilled chilli, fresh milk, fresh cream, carrots and ginger dash or organic Matina coffee",
-              image: mushroom_cappuccino,
-              allergies:   [{ allergyName: 'Gluten Free', allergySrc: gluten_free },
-    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },],
-              addons: [""],
-            },
-          ],
-        },
-        {
-          categoryName: "No Dough Burger",
-          items: [
-            {
-              itemName: "LEAN GREEN",
-              price: "55",
-              description:
-                "Quinoa Burger: roasted red bell pepper, cucumber pickles, caramelised onions, cheddar cheese, almond cream cheese and sweet potato fries",
-              image: placeholder,
-              allergies: [
-                { allergyName: 'Gluten Free', allergySrc: gluten_free },
-                { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
-                { allergyName: 'Vegan', allergySrc: vegan }
-              ],
-              addons: ["Sesame burger bun bread optional"],
-            },
-            {
-              itemName: "MR. PROMISE",
-              price: "65",
-              description:
-                "Jackfruit Vegan Chicken Burger: roasted bell pepper, garlic toum served on a bed of fresh lettuce and baby spinach",
-              image: mr_promise,
-              allergies: [
-                { allergyName: 'Gluten Free', allergySrc: gluten_free },
-                { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
-                { allergyName: 'Vegan', allergySrc: vegan }
-              ],
-              addons: ["Sesame burger bun bread optional"],
-            },
-          ],
-        },
+        
+       
         {
           categoryName: "Bowls",
           items: [
@@ -580,6 +506,84 @@ export const food = [
                 { allergyName: 'Vegan', allergySrc: vegan }
               ],
               addons: [""],
+            },
+          ],
+        },
+        {
+          categoryName: "Wraps and Crêpes",
+          items: [
+            {
+              itemName: "TEMPEH PEPPER",
+              price: "55",
+              description:
+                "Scrambled tempeh with curry chowder served with in-house preserves and vegan mayo",
+              image: tempeh_pepper_wrap,
+              allergies: [
+    { allergyName: 'Gluten Free', allergySrc: gluten_free },
+    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+    { allergyName: 'Spicy', allergySrc: spicy },
+    { allergyName: 'Vegan', allergySrc: vegan },
+  ],
+              addons: [""],
+            },
+            {
+              itemName: "BEETROOT SRIRACHA",
+              price: "55",
+              description:
+                "Tofu glazed in sriracha, chargrilled brocolli & in-house sriracha mayo wrapped in lettuce & kale",
+              image: beetroot_sriracha,
+              allergies: [
+                { allergyName: "Chef's Recommendation", allergySrc: recommended },
+                { allergyName: 'Gluten Free', allergySrc: gluten_free },
+                { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+                { allergyName: 'Spicy', allergySrc: spicy },
+                { allergyName: 'Vegan', allergySrc: vegan },
+              ],
+              addons: [""],
+            },
+            {
+              itemName: "CHICKEN CHARCOAL",
+              price: "60",
+              description:
+                "Chicken marinated in herbs and spices served on a charcoal crepe with a poached egg",
+              image: chicken_charcoal,
+              allergies: [
+    { allergyName: "Chef's Recommendation", allergySrc: recommended },
+    { allergyName: 'Gluten Free', allergySrc: gluten_free },
+    { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+  ],
+              addons: [""],
+            },
+          ],
+        },
+        {
+          categoryName: "No Dough Burger",
+          items: [
+            {
+              itemName: "LEAN GREEN",
+              price: "55",
+              description:
+                "Quinoa Burger: roasted red bell pepper, cucumber pickles, caramelised onions, cheddar cheese, almond cream cheese and sweet potato fries",
+              image: placeholder,
+              allergies: [
+                { allergyName: 'Gluten Free', allergySrc: gluten_free },
+                { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+                { allergyName: 'Vegan', allergySrc: vegan }
+              ],
+              addons: ["Sesame burger bun bread optional"],
+            },
+            {
+              itemName: "MR. PROMISE",
+              price: "65",
+              description:
+                "Jackfruit Vegan Chicken Burger: roasted bell pepper, garlic toum served on a bed of fresh lettuce and baby spinach",
+              image: mr_promise,
+              allergies: [
+                { allergyName: 'Gluten Free', allergySrc: gluten_free },
+                { allergyName: 'Refined Sugar Free', allergySrc: refined_sugar_free },
+                { allergyName: 'Vegan', allergySrc: vegan }
+              ],
+              addons: ["Sesame burger bun bread optional"],
             },
           ],
         },

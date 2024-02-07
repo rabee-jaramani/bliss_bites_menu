@@ -106,6 +106,16 @@ export default function ModalPopUp({ itemDetails }: any) {
                 color="#2c2c2c"
               >
                 {itemDetails.description}
+
+              {/* If the item is Pasta add the below */}
+                {itemDetails.itemName==="Al Pomodoro"||itemDetails.itemName==="Alfredo"||itemDetails.itemName==="Bliss"?
+                <>
+                <br/>
+                <strong style={{color:'#045768'}}>A choice of penne or fettuccine</strong>
+                </>
+                :''
+              }
+              {/* END If the item is Pasta add the below */}
               </Typography>
             ) : (
               ""
