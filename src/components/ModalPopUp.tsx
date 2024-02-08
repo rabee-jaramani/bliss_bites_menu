@@ -16,7 +16,7 @@ const style = {
   boxShadow: 24,
   // p: 2,
   borderRadius: "25px",
-  maxHeight: "80%",
+  maxHeight: "85%",
   overflowY: "scroll",
 };
 
@@ -53,18 +53,27 @@ export default function ModalPopUp({ itemDetails }: any) {
             <img src={itemDetails.image} alt={itemDetails.itemName} />
           </div>
           <div className="details-div">
-            {itemDetails.allergies[0]!==""?
-             itemDetails.allergies[0].allergyName.toLowerCase().includes(`chef`) ? (
-              <>
-               <div className="popup-icon-name-div"><img alt={itemDetails.allergies[0].allergyName} width={25} src={itemDetails.allergies[0].allergySrc}/><span>{itemDetails.allergies[0].allergyName}</span></div>
-              </>
+            {itemDetails.allergies[0] !== "" ? (
+              itemDetails.allergies[0].allergyName
+                .toLowerCase()
+                .includes(`chef`) ? (
+                <>
+                  <div className="popup-icon-name-div">
+                    <img
+                      alt={itemDetails.allergies[0].allergyName}
+                      width={25}
+                      src={itemDetails.allergies[0].allergySrc}
+                    />
+                    <span>{itemDetails.allergies[0].allergyName}</span>
+                  </div>
+                </>
+              ) : (
+                ""
+              )
             ) : (
               ""
-            )
-            :
-            ""
-            }
-           
+            )}
+
             <div className="under-image-div">
               <Typography
                 className="popup-title"
@@ -107,39 +116,61 @@ export default function ModalPopUp({ itemDetails }: any) {
               >
                 {itemDetails.description}
 
-              {/* If the item is Pasta add the below */}
-                {itemDetails.itemName==="Al Pomodoro"||itemDetails.itemName==="Alfredo"||itemDetails.itemName==="Bliss"?
-                <>
-                <br/>
-                <strong style={{color:'#045768'}}>A choice of penne or fettuccine</strong>
-                </>
-                :''
-              }
-              {/* END If the item is Pasta add the below */}
+                {/* If the item is Pasta add the below */}
+                {itemDetails.itemName === "Al Pomodoro" ||
+                itemDetails.itemName === "Alfredo" ||
+                itemDetails.itemName === "Bliss" ? (
+                  <>
+                    <br />
+                    <strong style={{ color: "#045768" }}>
+                      A choice of penne or fettuccine
+                    </strong>
+                  </>
+                ) : (
+                  ""
+                )}
+                {/* END If the item is Pasta add the below */}
               </Typography>
             ) : (
               ""
             )}
-          {/* allergies */}
-                {
-                itemDetails.allergies[0]!==""?
-                <div className="allergies-icons-div">
-                  {itemDetails.allergies.map((allergy:any)=>{
-                  
-                  return <>
-                    {
-                      allergy.allergyName.toLowerCase().includes(`chef`)?'':<div className="popup-icon-name-div" key={allergy.allergyName}><img alt={allergy.allergyName} width={25} src={allergy.allergySrc}/><span>{allergy.allergyName}</span> </div>
-                    }
+            {/* allergies */}
+            {itemDetails.allergies[0] !== "" ? (
+              <div className="allergies-icons-div">
+                {itemDetails.allergies.map((allergy: any) => {
+                  return (
+                    <>
+                      {allergy.allergyName.toLowerCase().includes(`chef`) ? (
+                        ""
+                      ) : (
+                        <div
+                          className="popup-icon-name-div"
+                          key={allergy.allergyName}
+                        >
+                          <img
+                            alt={allergy.allergyName}
+                            width={25}
+                            src={allergy.allergySrc}
+                          />
+                          <span>{allergy.allergyName}</span>{" "}
+                        </div>
+                      )}
                     </>
-                   
-                  })}
-                  </div>:
-                ""
-                }
-                {/* below check if te item is for Chef Must Have to remove the add on */}
-                {
-                !itemDetails.serve1?
-                itemDetails.addons[0] !== "" ? (
+                  );
+                })}
+              </div>
+            ) : (
+              ""
+            )}
+            {/* below check if te item is for Chef Must Have to remove the add on */}
+            {!itemDetails.serve1 ? (
+              itemDetails.addons[0] !== "" ? (
+                // Now check if the item has addons image
+                itemDetails.addons_img ? (
+                  <div className="addons-img-div">
+                    <img alt="alt" src={itemDetails.addons_img} />
+                  </div>
+                ) : (
                   <div className="add-on-div">
                     <Typography
                       className="popup-text"
@@ -160,28 +191,30 @@ export default function ModalPopUp({ itemDetails }: any) {
                       return <span key={index}>{addon}</span>;
                     })}
                   </div>
-                ) : (
-                  ""
-                ):
-                <div className="add-on-div">
-                    <Typography
-                      className="popup-text"
-                      id="modal-modal-addon"
-                      sx={{ mt: 2 }}
-                      fontSize={14}
-                    >
-                      <strong
-                        style={{
-                          color: "#045768",
-                          fontFamily: "'Libre Caslon Text', serif",
-                        }}
-                      >
-                        Serves 1
-                      </strong>
-                    </Typography>
-                  </div>
-                }
-          {/* END check if te item is for Chef Must Have to remove the add on */}
+                )
+              ) : (
+                ""
+              )
+            ) : (
+              <div className="add-on-div">
+                <Typography
+                  className="popup-text"
+                  id="modal-modal-addon"
+                  sx={{ mt: 2 }}
+                  fontSize={14}
+                >
+                  <strong
+                    style={{
+                      color: "#045768",
+                      fontFamily: "'Libre Caslon Text', serif",
+                    }}
+                  >
+                    Serves 1
+                  </strong>
+                </Typography>
+              </div>
+            )}
+            {/* END check if te item is for Chef Must Have to remove the add on */}
 
             <Typography
               className="no-added"
@@ -190,12 +223,22 @@ export default function ModalPopUp({ itemDetails }: any) {
               fontSize={14}
               component="div"
             >
-              <strong style={{fontSize:'12px'}}>No added emulsifiers and preservatives:</strong>
+              <strong style={{ fontSize: "12px" }}>
+                No added emulsifiers and preservatives:
+              </strong>
               <ul style={{ listStyleType: "none" }}>
-                <li style={{fontSize:'11px'}}>*Kindly inquire for plant-based alternatives</li>
-                <li style={{fontSize:'11px'}}>*Kindly ask for Nut free and Dairy free option</li>
-                <li style={{fontSize:'11px'}}>*All our dishes are made with millets</li>
-                <li style={{fontSize:'11px'}}>*All our dishes contain coconut and date sugar</li>
+                <li style={{ fontSize: "11px" }}>
+                  *Kindly inquire for plant-based alternatives
+                </li>
+                <li style={{ fontSize: "11px" }}>
+                  *Kindly ask for Nut free and Dairy free option
+                </li>
+                <li style={{ fontSize: "11px" }}>
+                  *All our dishes are made with millets
+                </li>
+                <li style={{ fontSize: "11px" }}>
+                  *All our dishes contain coconut and date sugar
+                </li>
               </ul>
               <br />
             </Typography>
