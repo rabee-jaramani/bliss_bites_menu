@@ -3,31 +3,30 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import CookieOutlinedIcon from "@mui/icons-material/CookieOutlined";
 import CloudOutlinedIcon from "@mui/icons-material/CloudOutlined";
-import LocalBarIcon from '@mui/icons-material/LocalBar';
-import RestaurantIcon from '@mui/icons-material/Restaurant';
+import LocalBarIcon from "@mui/icons-material/LocalBar";
+import RestaurantIcon from "@mui/icons-material/Restaurant";
 export default function BottomNav({
   selectedFB_type,
   setSelectedFB_type,
   handleFB_Change,
   selectedCollection,
   setSelectedCollection,
-  scrollTo
+  scrollTo,
 }: any) {
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setSelectedFB_type(newValue);
-    if(newValue==='Food'){
-      setSelectedCollection('BREAKFAST');
-      scrollTo("collection", 'BREAKFAST');
+    if (newValue === "Food") {
+      setSelectedCollection("BREAKFAST");
+      scrollTo("collection", "BREAKFAST");
     }
-    if(newValue==='Beverages'){
-      setSelectedCollection('BEVERAGES');
-      scrollTo("collection", 'BEVERAGES');
+    if (newValue === "Beverages") {
+      setSelectedCollection("BEVERAGES");
+      scrollTo("collection", "BEVERAGES");
     }
-    if(newValue==='Desserts'){
-      setSelectedCollection('BLISSFUL DESSERTS');
-      scrollTo("collection", 'BLISSFUL DESSERTS'); 
+    if (newValue === "Desserts") {
+      setSelectedCollection("BLISSFUL DESSERTS");
+      scrollTo("collection", "BLISSFUL DESSERTS");
     }
-    
   };
 
   return (

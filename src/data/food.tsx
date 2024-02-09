@@ -12,7 +12,6 @@ import beetroot_sriracha from "../images/items/beetroot_sriracha.webp";
 import berry_bliss_acai from "../images/items/berry_bliss_acai.webp";
 import chicken_charcoal from "../images/items/chicken_charcoal.webp";
 import free_range_roost from "../images/items/free_range_roost.webp";
-import french_toast_parisian from "../images/items/french_toast_parisian.webp";
 import french_toast_zaefran from "../images/items/french_toast_zaefran.webp";
 import fromage_frais from "../images/items/fromage_frais.webp";
 import healthy_harvest from "../images/items/healthy_harvest.webp";
@@ -21,7 +20,6 @@ import khameer from "../images/items/khameer.webp";
 import labneh_mush from "../images/items/labneh_mush.webp";
 import levian_toast from "../images/items/levian_toast.webp";
 import merc_mexico_salad from "../images/items/merc_mexico_salad.webp";
-import mr_promise from "../images/items/mr_promise.webp";
 import rustic from "../images/items/rustic.webp";
 import super_food_central_acai from "../images/items/super_food_central_acai.webp";
 import tempeh_pepper_wrap from "../images/items/tempeh_pepper_wrap.webp";
@@ -32,19 +30,12 @@ import tropical_boon_acai from "../images/items/tropical_boon_acai.webp";
 import valley_sriracha_toast from "../images/items/valley_sriracha_toast.webp";
 import work_to_walk from "../images/items/work_to_walk.webp";
 import zesty_ladle_soup from "../images/items/zesty_ladle_soup.webp";
-
-import artisan_cheeses from "../images/items/artisan_cheeses.webp";
-import bbq_chiken from "../images/items/bbq_chiken.webp";
+import lean_green from "../images/items/lean_green.webp";
 import bbq from "../images/items/bbq.webp";
 
 import mushroom_cappuccino from "../images/items/mushroom_cappuccino.webp";
 
 import parisian from "../images/items/parisian.webp";
-
-import pecan from "../images/items/pecan.webp";
-import pistachio_hazelnut from "../images/items/pistachio_hazelnut.webp";
-import pistachio_raspberry_mousse from "../images/items/pistachio_raspberry_mousse.webp";
-import power_green from "../images/items/power_green.webp";
 
 import york_hill_farm from "../images/items/york_hill_farm.webp";
 
@@ -52,6 +43,15 @@ import acai_of_relief_addons from "../images/categories_addons_images/acai_of_re
 import pasta_addons from "../images/categories_addons_images/pasta_addons.svg";
 import power_protine_addons from "../images/categories_addons_images/power_protine_addons.svg";
 import salads_addons from "../images/categories_addons_images/salads_addons.svg";
+import burger_addons from "../images/categories_addons_images/burger_addons.svg";
+
+import alfredo from "../images/items/alfredo.webp";
+import alpomodoro from "../images/items/alpomodoro.webp";
+import bbq_chicken from "../images/items/bbq_chicken.webp";
+import bliss from "../images/items/bliss.webp";
+import i_am_humbled from "../images/items/i_am_humbled.webp";
+import mr_promise from "../images/items/mr_promise.webp";
+import span_eggs from "../images/items/span-eggs.webp";
 export const food = [
   {
     parentCatName: "BREAKFAST",
@@ -158,7 +158,7 @@ export const food = [
             price: "55",
             description:
               "Frittata omlette served with in-house millet-based ciabatta toast and rosemary mash on the side",
-            image: placeholder,
+            image: span_eggs,
             allergies: [
               { allergyName: "Gluten Free", allergySrc: gluten_free },
               {
@@ -179,7 +179,7 @@ export const food = [
             price: "55",
             description:
               "Scrambled eggs with choice of cheese, grilled vegetables served with our in-house millet-based cheddar jalapeño toast",
-            image: placeholder,
+            image: i_am_humbled,
             allergies: [
               { allergyName: "Gluten Free", allergySrc: gluten_free },
               {
@@ -318,7 +318,7 @@ export const food = [
         categoryName: "French Toast - Open Toasts",
         items: [
           {
-            itemName: "LEVIAN TOAST",
+            itemName: "LEVIAN",
             price: "50",
             description: "Scrambled silken tofu with crème",
             image: levian_toast,
@@ -377,7 +377,7 @@ export const food = [
             addons: [""],
           },
           {
-            itemName: "VALLEY SRIRACHA TOAST",
+            itemName: "VALLEY SRIRACHA",
             price: "50",
             description:
               "In-house vegan sriracha, fresh strawberries, fresh basil and fresh labneh",
@@ -432,7 +432,7 @@ export const food = [
             price: "65",
             description:
               "Grilled barbeque chicken with sweet potato mash and caramelised onions",
-            image: placeholder,
+            image: bbq_chicken,
             allergies: [
               { allergyName: "Chef's Recommendation", allergySrc: recommended },
               { allergyName: "Gluten Free", allergySrc: gluten_free },
@@ -677,7 +677,7 @@ export const food = [
             price: "55",
             description:
               "Quinoa Burger: roasted red bell pepper, cucumber pickles, caramelised onions, cheddar cheese, almond cream cheese and sweet potato fries",
-            image: placeholder,
+            image: lean_green,
             allergies: [
               { allergyName: "Gluten Free", allergySrc: gluten_free },
               {
@@ -686,13 +686,14 @@ export const food = [
               },
               { allergyName: "Vegan", allergySrc: vegan },
             ],
+            addons_img: burger_addons,
             addons: ["Sesame burger bun bread optional"],
           },
           {
             itemName: "MR. PROMISE",
-            price: "65",
+            price: "55",
             description:
-              "Jackfruit Vegan Chicken Burger: roasted bell pepper, garlic toum served on a bed of fresh lettuce and baby spinach",
+              "Jackfruit Vegan Burger: roasted bell pepper, garlic toum served on a bed of fresh lettuce and baby spinach",
             image: mr_promise,
             allergies: [
               { allergyName: "Gluten Free", allergySrc: gluten_free },
@@ -702,6 +703,7 @@ export const food = [
               },
               { allergyName: "Vegan", allergySrc: vegan },
             ],
+            addons_img: burger_addons,
             addons: ["Sesame burger bun bread optional"],
           },
         ],
@@ -713,8 +715,8 @@ export const food = [
             itemName: "Al Pomodoro",
             price: "55",
             description:
-              "In-house gluten-free pasta with gluten-free & vegan fresh tomato sauce, fresh herbs and paremsan with gluten-free garlic bread",
-            image: placeholder,
+              "Fresh tomatoes and herbs tossed with our in house gluten free pasta made with millets and rice served with house salad on the side.",
+            image: alpomodoro,
             allergies: [
               { allergyName: "Gluten Free", allergySrc: gluten_free },
               {
@@ -734,8 +736,8 @@ export const food = [
             itemName: "Alfredo",
             price: "55",
             description:
-              "In-house gluten-free pasta tossed with in-house vegan cream with semi dried grilled veggies and gluten-free garlic bread",
-            image: placeholder,
+              "Fresh in house cashew cream and sweet flavour of nutmeg rolled in our in house gluten free pasta made with millets and rice. served with house salad on the side.",
+            image: alfredo,
             allergies: [
               { allergyName: "Gluten Free", allergySrc: gluten_free },
               {
@@ -755,8 +757,8 @@ export const food = [
             itemName: "Bliss",
             price: "55",
             description:
-              "In-house sauce with pestelled spices & herbs blended with vegan cream served with gluten-free garlic bread",
-            image: placeholder,
+              "Fresh in-house cashew cream and curry powder tossed with grilled chicken and choice of veggies served with house salad on the side.",
+            image: bliss,
             allergies: [
               { allergyName: "Gluten Free", allergySrc: gluten_free },
               {

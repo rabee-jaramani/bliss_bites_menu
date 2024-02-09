@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import Banner from "./banner/Banner";
 import BottomNav from "./components/BottomNav";
 import Footer from "./footer/Footer";
@@ -15,6 +15,7 @@ import { desserts_categories } from "./data2";
 import { chef_must_have_categories } from "./data2";
 import TopMenu from "./top_menu/TopMenu";
 import FB_MENU from "./fb_menu/FB_MENU";
+import AboutUsButton from "./components/AboutUsButton";
 function App() {
   const scrollTo = (where: string, tabName: string) => {
     if (where === "collection") {
@@ -55,7 +56,7 @@ function App() {
     ...food_categories,
     ...drinks_categories,
     ...desserts_categories,
-    ...chef_must_have_categories
+    ...chef_must_have_categories,
   ];
 
   // state to handle fb_type change food drinks dessrts
@@ -112,7 +113,7 @@ function App() {
           selectedCollection={selectedCollection}
           setSelectedCollection={setSelectedCollection}
         />
-         <FB_MENU
+        <FB_MENU
           selectedFB_type={selectedFB_type}
           handleFB_Change={handleFB_Change}
           FB_List_To_Render={chef_must_have_sides}
@@ -139,8 +140,8 @@ function App() {
           selectedCollection={selectedCollection}
           setSelectedCollection={setSelectedCollection}
         />
-       
-          <FB_MENU
+
+        <FB_MENU
           selectedFB_type="Vegan / Plant Based"
           handleFB_Change={handleFB_Change}
           FB_List_To_Render={vegan_plant_based}
@@ -157,6 +158,7 @@ function App() {
           setSelectedCollection={setSelectedCollection}
           scrollTo={scrollTo}
         />
+        <AboutUsButton />
         <Footer />
       </div>
     </div>

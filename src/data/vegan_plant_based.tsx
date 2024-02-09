@@ -1,26 +1,31 @@
+import lean_green from "../images/items/lean_green.webp";
 import placeholder from "../images/placeholder.webp";
-import berry_bliss_acai from "../images/items/berry_bliss_acai.webp";
 import gluten_free from "../images/icons/gluten_free.svg";
 import recommended from "../images/icons/recommended.svg";
 import refined_sugar_free from "../images/icons/refined_sugar_free.svg";
 import spicy from "../images/icons/spicy.svg";
 import vegan from "../images/icons/vegan.svg";
 import sugar_free from "../images/icons/refined_sugar_free.svg";
-import lean_green from "../images/items/lean_green.webp";
-import super_food_central_acai from "../images/items/super_food_central_acai.webp";
-import tropical_boon_acai from "../images/items/tropical_boon_acai.webp";
-import merc_mexico_salad from "../images/items/merc_mexico_salad.webp";
+import beetroot_sriracha from "../images/items/beetroot_sriracha.webp";
+import berry_bliss_acai from "../images/items/berry_bliss_acai.webp";
 import healthy_harvest from "../images/items/healthy_harvest.webp";
 import khameer from "../images/items/khameer.webp";
+import merc_mexico_salad from "../images/items/merc_mexico_salad.webp";
 import rustic from "../images/items/rustic.webp";
-import work_to_walk from "../images/items/work_to_walk.webp";
+import super_food_central_acai from "../images/items/super_food_central_acai.webp";
 import tempeh_pepper_wrap from "../images/items/tempeh_pepper_wrap.webp";
-import beetroot_sriracha from "../images/items/beetroot_sriracha.webp";
+import tropical_boon_acai from "../images/items/tropical_boon_acai.webp";
+import work_to_walk from "../images/items/work_to_walk.webp";
 
 import acai_of_relief_addons from "../images/categories_addons_images/acai_of_relief_addons.svg";
 import pasta_addons from "../images/categories_addons_images/pasta_addons.svg";
-import power_protine_addons from "../images/categories_addons_images/power_protine_addons.svg";
 import salads_addons from "../images/categories_addons_images/salads_addons.svg";
+
+import alfredo from "../images/items/alfredo.webp";
+import alpomodoro from "../images/items/alpomodoro.webp";
+import bliss from "../images/items/bliss.webp";
+import mr_promise from "../images/items/mr_promise.webp";
+import burger_addons from "../images/categories_addons_images/burger_addons.svg";
 
 export const vegan_plant_based = [
   {
@@ -266,14 +271,15 @@ export const vegan_plant_based = [
               },
               { allergyName: "Vegan", allergySrc: vegan },
             ],
+            addons_img: burger_addons,
             addons: ["Sesame burger bun bread optional"],
           },
           {
             itemName: "MR. PROMISE",
-            price: "65",
+            price: "55",
             description:
-              "Jackfruit Vegan Chicken Burger: roasted bell pepper, garlic toum served on a bed of fresh lettuce and baby spinach",
-            image: placeholder,
+              "Jackfruit Vegan Burger: roasted bell pepper, garlic toum served on a bed of fresh lettuce and baby spinach",
+            image: mr_promise,
             allergies: [
               { allergyName: "Gluten Free", allergySrc: gluten_free },
               {
@@ -282,6 +288,7 @@ export const vegan_plant_based = [
               },
               { allergyName: "Vegan", allergySrc: vegan },
             ],
+            addons_img: burger_addons,
             addons: ["Sesame burger bun bread optional"],
           },
         ],
@@ -294,7 +301,7 @@ export const vegan_plant_based = [
             price: "55",
             description:
               "In-house gluten-free pasta with gluten-free & vegan fresh tomato sauce, fresh herbs and paremsan with gluten-free garlic bread",
-            image: placeholder,
+            image: alpomodoro,
             allergies: [
               { allergyName: "Gluten Free", allergySrc: gluten_free },
               {
@@ -315,7 +322,7 @@ export const vegan_plant_based = [
             price: "55",
             description:
               "In-house gluten-free pasta tossed with in-house vegan cream with semi dried grilled veggies and gluten-free garlic bread",
-            image: placeholder,
+            image: alfredo,
             allergies: [
               { allergyName: "Gluten Free", allergySrc: gluten_free },
               {
@@ -336,7 +343,7 @@ export const vegan_plant_based = [
             price: "55",
             description:
               "In-house sauce with pestelled spices & herbs blended with vegan cream served with gluten-free garlic bread",
-            image: placeholder,
+            image: bliss,
             allergies: [
               { allergyName: "Gluten Free", allergySrc: gluten_free },
               {
