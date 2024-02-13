@@ -40,7 +40,7 @@ export const desserts = [
             addons: [""],
           },
           {
-            itemName: "Peacan Carrot",
+            itemName: "Pecan Carrot",
             price: "30",
             description: "",
             image: placeholder,
