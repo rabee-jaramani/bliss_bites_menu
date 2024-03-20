@@ -59,7 +59,7 @@ export const chef_must_have_sides = [
           },
           {
             itemName: "Artisan Cheeses",
-            price: "25",
+            price: "40",
             description: "",
             image: artisan_cheeses,
             allergies: [""],

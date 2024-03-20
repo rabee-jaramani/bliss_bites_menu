@@ -31,13 +31,11 @@ import valley_sriracha_toast from "../images/items/valley_sriracha_toast.webp";
 import work_to_walk from "../images/items/work_to_walk.webp";
 import zesty_ladle_soup from "../images/items/zesty_ladle_soup.webp";
 import lean_green from "../images/items/lean_green.webp";
-import bbq from "../images/items/bbq.webp";
 
 import mushroom_cappuccino from "../images/items/mushroom_cappuccino.webp";
 
 import parisian from "../images/items/parisian.webp";
 
-import york_hill_farm from "../images/items/york_hill_farm.webp";
 
 import acai_of_relief_addons from "../images/categories_addons_images/acai_of_relief_addons.svg";
 import pasta_addons from "../images/categories_addons_images/pasta_addons.svg";
@@ -45,10 +43,10 @@ import power_protine_addons from "../images/categories_addons_images/power_proti
 import salads_addons from "../images/categories_addons_images/salads_addons.svg";
 import burger_addons from "../images/categories_addons_images/burger_addons.svg";
 
-import alfredo from "../images/items/alfredo.webp";
+import bliss from "../images/items/bliss.webp";
 import alpomodoro from "../images/items/alpomodoro.webp";
 import bbq_chicken from "../images/items/bbq_chicken.webp";
-import bliss from "../images/items/bliss.webp";
+import alfredo from "../images/items/alfredo.webp";
 import i_am_humbled from "../images/items/i_am_humbled.webp";
 import mr_promise from "../images/items/mr_promise.webp";
 import span_eggs from "../images/items/span-eggs.webp";
@@ -201,7 +199,7 @@ export const food = [
         categoryName: "French Toast - Savoury",
         items: [
           {
-            itemName: "FORMAGE FRAIS",
+            itemName: "FROMAGE FRAIS",
             price: "45",
             description: "French toast with chilli chives cream cheese ",
             image: fromage_frais,
@@ -240,7 +238,7 @@ export const food = [
             price: "50",
             description:
               "A classic french toast with cream cheese and berries on the side",
-            image: york_hill_farm,
+            image: placeholder,
             allergies: [
               { allergyName: "Gluten Free", allergySrc: gluten_free },
               {
@@ -366,7 +364,7 @@ export const food = [
             price: "50",
             description:
               "Caramelized onion, cheddar cheese and grilled tofu glazed with in-house barbeque sauce",
-            image: bbq,
+            image: placeholder,
             allergies: [
               { allergyName: "Gluten Free", allergySrc: gluten_free },
               {
@@ -494,7 +492,7 @@ export const food = [
             itemName: "MERC MEXICO",
             price: "50",
             description:
-              "Guacamole, baby spinach, feta cheese, cherry tomatoes, pecan nuts and in-house gluten-free and vegan nachos and crackers",
+              "Guacamole, baby spinach, halloumi cheese, cherry tomatoes, pecan nuts and in-house gluten-free and vegan nachos and crackers",
             image: merc_mexico_salad,
             allergies: [
               { allergyName: "Chef's Recommendation", allergySrc: recommended },

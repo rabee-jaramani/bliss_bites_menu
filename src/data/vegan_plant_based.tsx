@@ -111,7 +111,7 @@ export const vegan_plant_based = [
             itemName: "MERC MEXICO SALAD",
             price: "50",
             description:
-              "Guacamole, baby spinach, feta cheese, cherry tomatoes, pecan nuts and in-house gluten-free and vegan nachos and crackers",
+              "Guacamole, baby spinach, halloumi cheese, cherry tomatoes, pecan nuts and in-house gluten-free and vegan nachos and crackers",
             image: merc_mexico_salad,
             allergies: [
               { allergyName: "Chef's Recommendation", allergySrc: recommended },
